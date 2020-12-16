@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+<sdf version="1.7">
+  <model name="cylinder_blue">
+    <static>false</static>
+    <link name="cylinder_blue">
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+            <mass>0.125</mass>
+            <inertia>
+                <ixx>0.000116666667</ixx>
+                <iyy>0.000116666667</iyy>
+                <izz>0.000025</izz>
+            </inertia>
+        </inertial>
+        <visual name="vis">
+            <geometry>
+                <cylinder>
+                    <radius>0.02</radius>
+                    <length>0.1</length>
+                </cylinder>
+            </geometry>
+            <material>
+                <ambient>0.3 0.3 0.7 1</ambient>
+                <diffuse>0.3 0.3 0.7 1</diffuse>
+                <specular>0.3 0.3 0.7 1</specular>
+                <emissive>0.3 0.3 0.7 1</emissive>
+            </material>
+        </visual>
+        <collision name="col">
+            <geometry>
+                <cylinder>
+                    <radius>0.02</radius>
+                    <length>0.1</length>
+                </cylinder>
+            </geometry>
+            <surface>
+                <friction>
+                    <torsional>
+                        <patch_radius>0.1</patch_radius>
+                    </torsional>
+                    <ode>
+                        <mu>5</mu>
+                        <mu2>5</mu2>
+                    </ode>
+                </friction>
+                <contact>
+                    <ode>
+                        <soft_cfm>0.001</soft_cfm>
+                        <min_depth>0.003</min_depth>
+                        <max_vel>0</max_vel>
+                    </ode>
+                </contact>
+            </surface>
+        </collision>        
+    </link>
+  </model>
+</sdf>

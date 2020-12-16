@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<launch>
+
+  <!-- Gazebo parameters -->
+  <arg name="gazebo_model_name" default="gripper" doc="The name to give to the model in Gazebo (after spawning it)." />
+  <arg name="robot_description_param_name" default="$(find xacro)/xacro '$(find robotiq_3f_gripper_visualization)/cfg/robotiq-3f-gripper_articulated.xacro'" doc="Name of the parameter which contains the robot description (ie: URDF) which should be spawned into Gazebo." />
+  <arg name="x" default="2.0" />
+  <arg name="y" default="2.0" />
+  <arg name="z" default="0.1" doc="At which height the model should be spawned. NOTE: lower values will cause the robot to collide with the ground plane." />
+
+  <!-- Spawn the model loaded earlier in the simulation just started -->
+  <node name="spawn_gazebo_model" pkg="gazebo_ros" type="spawn_model"
+    args="
+      -urdf
+      -param $(arg robot_description_param_name)
+      -model $(arg gazebo_model_name)
+      -x $(arg x)
+      -y $(arg y)
+      -z $(arg z)"
+    output="screen" respawn="false" />
+</launch>

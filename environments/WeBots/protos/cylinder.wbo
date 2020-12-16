@@ -1,0 +1,31 @@
+#VRML_OBJ R2020a utf8
+Solid {
+  translation 0 1 0.07
+  rotation 1 0 0 1.5707997360621702
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.7 0.3 0.3
+          emissiveColor 0.7 0.3 0.3
+          shininess 0
+        }
+      }
+      geometry Cylinder {
+        height 0.1
+        radius 0.02
+      }
+    }
+  ]
+  name "Cylinder_1"
+  boundingObject Shape {
+    geometry Cylinder {
+      height 0.1
+      radius 0.02
+    }
+  }
+  physics Physics {
+    damping Damping {
+    }
+  }
+}

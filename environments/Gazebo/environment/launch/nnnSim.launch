@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<launch>
+
+  <!-- Gazebo parameters -->
+  <arg name="debug" default="false" doc="Activates the debug mode."/>
+  <arg name="enable_ros_network" default="true"/>
+  <arg name="gazebo_model_name" default="nnnSim" doc="The name to give to the model in Gazebo (after spawning it)."/>
+  <arg name="gazebo_world" default="worlds/nnnSim.world" doc="The '.world' file to load in Gazebo."/>
+  <arg name="gui" default="false" doc="If true, Gazebo UI is started. If false, only start Gazebo server."/>
+  <arg name="gui_required" default="false"/>
+  <arg name="output" default="screen"/>
+  <!--
+  TODO: Further investigation if there's a better workaround to Issue#93 from gazebo_ros_pkgs, see: https://github.com/ros-simulation/gazebo_ros_pkgs/issues/93
+  To be able to take the initial positions of the joints, the simulation has to start paused,
+  but as soon as the physics-engine is loaded it starts the simulation via the parameter '-unpaused'
+  in node: "spawn_gazebo_model" from gazebo_ros package in file "controller_utils.launch.xml"
+   -->
+  <arg name="paused" default="true" doc="If true, start Gazebo in paused mode. If false, start simulation as soon as Gazebo has loaded."/>
+  <arg name="physics" default="ode" doc="ODE is the default Physics-engine, Bullet and Dartsim are also implemented."/>
+  <arg name="pub_clock_frequency" default="1000"/>
+  <arg name="recording" default="false"/>
+  <arg name="respawn_gazebo" default="false"/>
+  <arg name="robot_description_param_name" default="robot_description" doc="Name of the parameter which contains the robot description (ie: URDF) which should be spawned into Gazebo."/>
+  <arg name="start_gazebo" default="true" doc="If true, Gazebo will be started. If false, Gazebo will be assumed to have been started elsewhere."/>
+  <arg name="server_required" default="false"/>
+  <arg name="use_clock_frequency" default="false"/>
+  <arg name="use_sim_time" default="true"/>
+  <arg name="verbose" default="false"/>
+
+  <include file="$(find gazebo_ros)/launch/empty_world.launch" if="$(arg start_gazebo)">
+    <arg name="debug" value="$(arg debug)"/>
+    <arg name="enable_ros_network" value="$(arg enable_ros_network)"/>
+    <arg name="gui" value="$(arg gui)"/>
+    <arg name="gui_required" value="$(arg gui_required)"/>
+    <arg name="output" value="$(arg output)"/>
+    <arg name="paused" value="$(arg paused)"/>
+    <arg name="physics" value="$(arg physics)"/>
+    <arg name="pub_clock_frequency" value="$(arg pub_clock_frequency)"/>
+    <arg name="recording" value="$(arg recording)"/>
+    <arg name="respawn_gazebo" value="$(arg respawn_gazebo)"/>
+    <arg name="server_required" value="$(arg server_required)"/>
+    <arg name="use_clock_frequency" value="$(arg use_clock_frequency)"/>
+    <arg name="use_sim_time" value="$(arg use_sim_time)"/>
+    <arg name="verbose" value="$(arg verbose)"/>
+    <arg name="world_name" value="$(arg gazebo_world)"/>
+  </include>
+
+</launch>

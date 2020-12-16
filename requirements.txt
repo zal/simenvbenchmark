@@ -1,0 +1,8 @@
+GPUtil
+# mujoco-py
+numpy
+osrf-pycommon
+pandas
+psutil
+pybullet
+scipy

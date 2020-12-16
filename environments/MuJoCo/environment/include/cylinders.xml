@@ -1,0 +1,109 @@
+<mujocoinclude>
+
+    <body name="cylinder_1" pos="0 1 0.07">
+        <geom name="cylinder_1" type="cylinder" size="0.02 0.05" mass="0.125" condim="6" friction="0.45 1 0.001" solimp="0.9 0.9 0.01 0.5 6" solref="0.0001 1" rgba=".7 .3 .3 1"/>
+        <joint name='cylinder_1_joint' type='free' damping='0.01'/>
+    </body>
+
+    <body name="cylinder_2_1" pos="0 1.1 0.07">
+        <geom type="cylinder" size="0.02 0.05" mass="0.125" condim="6" friction="0.45 1 0.001" solimp="0.9 0.9 0.01 0.5 6" solref="0.0001 1" rgba=".3 .7 .3 1"/>
+        <joint name='cylinder_2_1_joint' type='free' damping='0.01'/>
+    </body>
+
+    <body name="cylinder_2_2" pos="0.071 1.071 0.07">
+        <geom type="cylinder" size="0.02 0.05" mass="0.125" condim="6" friction="0.45 1 0.001" solimp="0.9 0.9 0.01 0.5 6" solref="0.0001 1" rgba=".3 .7 .3 1"/>
+        <joint name='cylinder_2_2_joint' type='free' damping='0.01'/>
+    </body>
+
+    <body name="cylinder_2_3" pos="0.1 1 0.07">
+        <geom type="cylinder" size="0.02 0.05" mass="0.125" condim="6" friction="0.45 1 0.001" solimp="0.9 0.9 0.01 0.5 6" solref="0.0001 1" rgba=".3 .7 .3 1"/>
+        <joint name='cylinder_2_3_joint' type='free' damping='0.01'/>
+    </body>
+
+    <body name="cylinder_2_4" pos="0.071 0.929 0.07">
+        <geom type="cylinder" size="0.02 0.05" mass="0.125" condim="6" friction="0.45 1 0.001" solimp="0.9 0.9 0.01 0.5 6" solref="0.0001 1" rgba=".3 .7 .3 1"/>
+        <joint name='cylinder_2_4_joint' type='free' damping='0.01'/>
+    </body>
+
+    <body name="cylinder_2_5" pos="0 0.9 0.07">
+        <geom type="cylinder" size="0.02 0.05" mass="0.125" condim="6" friction="0.45 1 0.001" solimp="0.9 0.9 0.01 0.5 6" solref="0.0001 1" rgba=".3 .7 .3 1"/>
+        <joint name='cylinder_2_5_joint' type='free' damping='0.01'/>
+    </body>
+
+    <body name="cylinder_2_6" pos="-0.071 0.929 0.07">
+        <geom type="cylinder" size="0.02 0.05" mass="0.125" condim="6" friction="0.45 1 0.001" solimp="0.9 0.9 0.01 0.5 6" solref="0.0001 1" rgba=".3 .7 .3 1"/>
+        <joint name='cylinder_2_6_joint' type='free' damping='0.01'/>
+    </body>
+
+    <body name="cylinder_2_7" pos="-0.1 1 0.07">
+        <geom type="cylinder" size="0.02 0.05" mass="0.125" condim="6" friction="0.45 1 0.001" solimp="0.9 0.9 0.01 0.5 6" solref="0.0001 1" rgba=".3 .7 .3 1"/>
+        <joint name='cylinder_2_7_joint' type='free' damping='0.01'/>
+    </body>
+
+    <body name="cylinder_2_8" pos="-0.071 1.071 0.07">
+        <geom type="cylinder" size="0.02 0.05" mass="0.125" condim="6" friction="0.45 1 0.001" solimp="0.9 0.9 0.01 0.5 6" solref="0.0001 1" rgba=".3 .7 .3 1"/>
+        <joint name='cylinder_2_8_joint' type='free' damping='0.01'/>
+    </body>
+
+
+    <body name="cylinder_3_1" pos="0 1.2 0.07">
+        <geom type="cylinder" size="0.02 0.05" mass="0.125" condim="6" friction="0.45 1 0.001" solimp="0.9 0.9 0.01 0.5 6" solref="0.0001 1" rgba=".3 .3 .7 1"/>
+        <joint name='cylinder_3_1_joint' type='free' damping='0.01'/>
+    </body>
+
+    <body name="cylinder_3_2" pos="0.1 1.173 0.07">
+        <geom type="cylinder" size="0.02 0.05" mass="0.125" condim="6" friction="0.45 1 0.001" solimp="0.9 0.9 0.01 0.5 6" solref="0.0001 1" rgba=".3 .3 .7 1"/>
+        <joint name='cylinder_3_2_joint' type='free' damping='0.01'/>
+    </body>
+
+    <body name="cylinder_3_3" pos="0.171 1.104 0.07">
+        <geom type="cylinder" size="0.02 0.05" mass="0.125" condim="6" friction="0.45 1 0.001" solimp="0.9 0.9 0.01 0.5 6" solref="0.0001 1" rgba=".3 .3 .7 1"/>
+        <joint name='cylinder_3_3_joint' type='free' damping='0.01'/>
+    </body>
+
+    <body name="cylinder_3_4" pos="0.2 1 0.07">
+        <geom type="cylinder" size="0.02 0.05" mass="0.125" condim="6" friction="0.45 1 0.001" solimp="0.9 0.9 0.01 0.5 6" solref="0.0001 1" rgba=".3 .3 .7 1"/>
+        <joint name='cylinder_3_4_joint' type='free' damping='0.01'/>
+    </body>
+
+    <body name="cylinder_3_5" pos="0.171 0.896 0.07">
+        <geom type="cylinder" size="0.02 0.05" mass="0.125" condim="6" friction="0.45 1 0.001" solimp="0.9 0.9 0.01 0.5 6" solref="0.0001 1" rgba=".3 .3 .7 1"/>
+        <joint name='cylinder_3_5_joint' type='free' damping='0.01'/>
+    </body>
+
+    <body name="cylinder_3_6" pos="0.1 0.827 0.07">
+        <geom type="cylinder" size="0.02 0.05" mass="0.125" condim="6" friction="0.45 1 0.001" solimp="0.9 0.9 0.01 0.5 6" solref="0.0001 1" rgba=".3 .3 .7 1"/>
+        <joint name='cylinder_3_6_joint' type='free' damping='0.01'/>
+    </body>
+
+    <body name="cylinder_3_7" pos="0 0.8 0.07">
+        <geom type="cylinder" size="0.02 0.05" mass="0.125" condim="6" friction="0.45 1 0.001" solimp="0.9 0.9 0.01 0.5 6" solref="0.0001 1" rgba=".3 .3 .7 1"/>
+        <joint name='cylinder_3_7_joint' type='free' damping='0.01'/>
+    </body>
+
+    <body name="cylinder_3_8" pos="-0.1 0.827 0.07">
+        <geom type="cylinder" size="0.02 0.05" mass="0.125" condim="6" friction="0.45 1 0.001" solimp="0.9 0.9 0.01 0.5 6" solref="0.0001 1" rgba=".3 .3 .7 1"/>
+        <joint name='cylinder_3_8_joint' type='free' damping='0.01'/>
+    </body>
+
+    <body name="cylinder_3_9" pos="-0.171 0.896 0.07">
+        <geom type="cylinder" size="0.02 0.05" mass="0.125" condim="6" friction="0.45 1 0.001" solimp="0.9 0.9 0.01 0.5 6" solref="0.0001 1" rgba=".3 .3 .7 1"/>
+        <joint name='cylinder_3_9_joint' type='free' damping='0.01'/>
+    </body>
+
+    <body name="cylinder_3_10" pos="-0.2 1 0.07">
+        <geom type="cylinder" size="0.02 0.05" mass="0.125" condim="6" friction="0.45 1 0.001" solimp="0.9 0.9 0.01 0.5 6" solref="0.0001 1" rgba=".3 .3 .7 1"/>
+        <joint name='cylinder_3_10_joint' type='free' damping='0.01'/>
+    </body>
+
+    <body name="cylinder_3_11" pos="-0.171 1.104 0.07">
+        <geom type="cylinder" size="0.02 0.05" mass="0.125" condim="6" friction="0.45 1 0.001" solimp="0.9 0.9 0.01 0.5 6" solref="0.0001 1" rgba=".3 .3 .7 1"/>
+        <joint name='cylinder_3_11_joint' type='free' damping='0.01'/>
+    </body>
+
+    <body name="cylinder_3_12" pos="-0.1 1.173 0.07">
+        <geom type="cylinder" size="0.02 0.05" mass="0.125" condim="6" friction="0.45 1 0.001" solimp="0.9 0.9 0.01 0.5 6" solref="0.0001 1" rgba=".3 .3 .7 1"/>
+        <joint name='cylinder_3_12_joint' type='free' damping='0.01'/>
+    </body>
+
+</mujocoinclude>

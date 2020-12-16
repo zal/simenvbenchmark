@@ -1,0 +1,32 @@
+<mujocoinclude>
+    <texture name="ur10e_tex"     type="2d"       builtin="flat" height="32" width="32" rgb1="0.45 0.45 0.45" />
+    <texture name="gripper_tex" type="2d"       builtin="flat" height="32" width="32" rgb1="0.1 0.1 0.1" rgb2="0 0 0"/>
+    <material name="ur10e_mat"        texture="ur10e_tex"   shininess="0.9" specular="0.75" reflectance="0.3"/>
+    <material name="gripper_mat"    texture="gripper_tex"   shininess="0.9" specular="0.75" reflectance="0.4"/>
+
+    <mesh name="base_vis" file="urdfs/URDF_conv/base_vis.stl" />
+    <mesh name="base_col" file="urdfs/URDF_conv/base.stl" />
+    <mesh name="shoulder_vis" file="urdfs/URDF_conv/shoulder_vis.stl" />
+    <mesh name="shoulder_col" file="urdfs/URDF_conv/shoulder.stl" />
+    <mesh name="upperarm_vis" file="urdfs/URDF_conv/upperarm_vis.stl" />
+    <mesh name="upperarm_col" file="urdfs/URDF_conv/upperarm.stl" />
+    <mesh name="forearm_vis" file="urdfs/URDF_conv/forearm_vis.stl" />
+    <mesh name="forearm_col" file="urdfs/URDF_conv/forearm.stl" />
+    <mesh name="wrist1_vis" file="urdfs/URDF_conv/wrist1_vis.stl" />
+    <mesh name="wrist1_col" file="urdfs/URDF_conv/wrist1.stl" />
+    <mesh name="wrist2_vis" file="urdfs/URDF_conv/wrist2_vis.stl" />
+    <mesh name="wrist2_col" file="urdfs/URDF_conv/wrist2.stl" />
+    <mesh name="wrist3_vis" file="urdfs/URDF_conv/wrist3_vis.stl" />
+    <mesh name="wrist3_col" file="urdfs/URDF_conv/wrist3.stl" />
+    <mesh name="link_0_vis" file="urdfs/URDF_conv/link_0_vis.stl" />
+    <mesh name="link_0_col" file="urdfs/URDF_conv/link_0.stl" />
+    <mesh name="link_1_vis" file="urdfs/URDF_conv/link_1_vis.stl" />
+    <mesh name="link_1_col" file="urdfs/URDF_conv/link_1.stl" />
+    <mesh name="link_2_vis" file="urdfs/URDF_conv/link_2_vis.stl" />
+    <mesh name="link_2_col" file="urdfs/URDF_conv/link_2.stl" />
+    <mesh name="link_3_vis" file="urdfs/URDF_conv/link_3_vis.stl"/>
+    <mesh name="link_3_col" file="urdfs/URDF_conv/link_3.stl"/>
+    <mesh name="palm_vis" file="urdfs/URDF_conv/palm_vis.stl" />
+    <mesh name="palm_col" file="urdfs/URDF_conv/palm.stl" />
+
+</mujocoinclude>

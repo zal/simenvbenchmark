@@ -1,0 +1,82 @@
+<mujoco model="benchmark_case">
+    <compiler inertiafromgeom='auto' angle='radian' eulerseq='xyz'/>
+    <size njmax="5000" nconmax="1000" />
+    <option timestep='0.001' iterations='50' solver='Newton' gravity='0 0 -9.81' cone="elliptic" tolerance="1e-10" impratio="10"/>
+
+    <asset>
+        <include file="include/ur10e_3fGripper_assets.xml"/>
+
+        <texture type="skybox" builtin="gradient" rgb1="0.3 0.5 0.7" rgb2="0 0 0" width="512" height="512"/>
+        <texture name="texplane" type="2d" builtin="checker" rgb1=".2 .3 .4" rgb2=".1 0.15 0.2" width="512" height="512" mark="cross" markrgb=".8 .8 .8"/>
+
+        <material name='MatPlane' reflectance='0.1' texture="texplane" texrepeat="1 1" texuniform="true"/>
+    </asset>
+
+    <default>
+        <default class="ur10e_actuator">
+            <position ctrllimited="true" kp="16000" forcelimited="true"></position >
+        </default>
+        <default class="3fGripper">
+            <position ctrllimited="true" kp="80" forcelimited="true"></position >
+        </default>
+    </default>
+
+    <contact>
+        <exclude body1="wrist_3_link" body2="gripperfinger_1_link_0"/>
+
+        <exclude body1="wrist_3_link" body2="gripperfinger_1_link_1"/>
+        <exclude body1="gripperfinger_1_link_0" body2="gripperfinger_1_link_2"/>
+        <exclude body1="gripperfinger_1_link_1" body2="gripperfinger_1_link_3"/>
+        <exclude body1="wrist_3_link" body2="gripperfinger_2_link_1"/>
+        <exclude body1="gripperfinger_2_link_0" body2="gripperfinger_2_link_2"/>
+        <exclude body1="gripperfinger_2_link_2" body2="gripperfinger_2_link_3"/>
+        <exclude body1="wrist_3_link" body2="gripperfinger_middle_link_1"/>
+        <exclude body1="gripperfinger_2_link_0" body2="gripperfinger_middle_link_2"/>
+        <exclude body1="gripperfinger_middle_link_1" body2="gripperfinger_middle_link_3"/>
+
+        <exclude body1="gripperfinger_1_link_3" body2="gripperfinger_2_link_3"/>
+
+    </contact>
+
+    <worldbody>
+        <geom name="floor" pos="0 0 0" size="0 0 .25" type="plane" material="MatPlane" condim="3"/>
+        <light directional='true' diffuse='1 1 1' specular='0.3 0.3 0.3' pos='0 0 0' dir='0 -.5 -1'/>
+        <light directional='true' diffuse='1 1 1' specular='0.3 0.3 0.3' pos='0 0 0' dir='.25 .25 -1'/>
+
+        <!-- Play Ground -->
+        <geom  type="box" pos="0 0.75 0.01" size="1.3 0.9 0.01" rgba=".3 .3 .3 1" condim="3"/>
+        <geom type="box" pos="1.31 0.75 0.03" size="0.01 0.9 0.03" rgba=".3 .3 .3 1" condim="3" friction="1 1 0"/>
+        <geom type="box" pos="-1.31 0.75 0.03" size="0.01 0.9 0.03" rgba=".3 .3 .3 1" condim="3" friction="1 1 0"/>
+        <geom type="box" pos="0 -0.16 0.03" size="1.32 0.01 0.03" rgba=".3 .3 .3 1" condim="3" friction="1 1 0"/>
+        <geom type="box" pos="0 1.66 0.03" size="1.32 0.01 0.03" rgba=".3 .3 .3 1" condim="3" friction="1 1 0"/>
+
+        <!-- Roboter -->
+        <include file="urdfs/URDF_conv/ur10e.xml"/>
+
+        <!-- Objekte -->
+        <include file="include/cylinders.xml"/>
+    </worldbody>
+
+    <actuator>
+        <position  class="ur10e_actuator" joint="shoulder_pan_joint" name="shoulder_pan_act" ctrlrange="-6.28318530718 6.28318530718" forcerange="-330 330" kp="10000"></position >
+        <position  class="ur10e_actuator" joint="shoulder_lift_joint" name="shoulder_lift_act" ctrlrange="-6.28318530718 6.28318530718" forcerange="-330 330" kp="25000"></position >
+        <position  class="ur10e_actuator" joint="elbow_joint" name="elbow_act" ctrlrange="-6.28318530718 6.28318530718" forcerange="-150 150" kp="25000"></position >
+        <position  class="ur10e_actuator" joint="wrist_1_joint" name="wrist_1_act" ctrlrange="-6.28318530718 6.28318530718" forcerange="-56 56" kp="15000"></position >
+        <position  class="ur10e_actuator" joint="wrist_2_joint" name="wrist_2_act" ctrlrange="-6.28318530718 6.28318530718" forcerange="-56 56" kp="1800"></position >
+        <position  class="ur10e_actuator" joint="wrist_3_joint" name="wrist_3_act" ctrlrange="-6.28318530718 6.28318530718" forcerange="-56 56" kp="1800"></position >
+
+        <position  class="3fGripper" joint="palm_finger_1_joint" name="palm_finger_1_act" ctrlrange="-0.1784 0.192" forcerange="-100 100"></position >
+        <position  class="3fGripper" joint="finger_1_joint_1" name="finger_1_joint_1_act" ctrlrange="0.0495 1.2218" forcerange="-4 4" kp="20"></position >
+        <position  class="3fGripper" joint="finger_1_joint_2" name="finger_1_joint_2_act" ctrlrange="0 1.5708" forcerange="-100 100"></position >
+        <position  class="3fGripper" joint="finger_1_joint_3" name="finger_1_joint_3_act" ctrlrange="-1.2217 -0.0523" forcerange="-4 4"></position >
+        <position  class="3fGripper" joint="palm_finger_2_joint" name="palm_finger_2_act" ctrlrange="-0.192 0.1784" forcerange="-100 100"></position >
+        <position  class="3fGripper" joint="finger_2_joint_1" name="finger_2_joint_1_act" ctrlrange="0.0495 1.2218" forcerange="-4 4" kp="20"></position >
+        <position  class="3fGripper" joint="finger_2_joint_2" name="finger_2_joint_2_act" ctrlrange="0 1.5708" forcerange="-100 100"></position >
+        <position  class="3fGripper" joint="finger_2_joint_3" name="finger_2_joint_3_act" ctrlrange="-1.2217 -0.0523" forcerange="-4 4"></position >
+        <position  class="3fGripper" joint="finger_middle_joint_1" name="finger_middle_joint_1_act" ctrlrange="0.0495 1.2218" forcerange="-8 8"></position >
+        <position  class="3fGripper" joint="finger_middle_joint_2" name="finger_middle_joint_2_act" ctrlrange="0 1.5708" forcerange="-100 100"></position >
+        <position  class="3fGripper" joint="finger_middle_joint_3" name="finger_middle_joint_3_act" ctrlrange="-1.2217 -0.0523" forcerange="-8 8"></position >
+
+    </actuator>
+
+</mujoco>

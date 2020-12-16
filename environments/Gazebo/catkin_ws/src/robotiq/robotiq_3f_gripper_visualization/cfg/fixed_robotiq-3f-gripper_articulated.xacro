@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<robot name="robotiq-3f-gripper_articulated" xmlns:xacro="http://ros.org/wiki/xacro">
+
+    <!-- Add world and fixate the gripper with a joint -->
+    <link name="world"/>
+
+    <!--
+    <joint name="world_link" type="fixed">
+        <parent link="world"/>
+        <child link="tool00"/>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </joint> -->
+
+    <!-- Insert 3f gripper -->
+    <xacro:include filename="$(find robotiq_3f_gripper_visualization)/cfg/robotiq-3f-gripper_articulated_macro_transmissions.xacro" />
+    <xacro:robotiq-3f-gripper_articulated prefix="" parent="world">
+        <origin rpy="0 0 0" xyz="0 0 0"/>
+    </xacro:robotiq-3f-gripper_articulated>
+
+
+    <!--
+      Inject Gazebo ROS Control plugin, which allows us to use ros_control
+      controllers to control the virtual robot hw.
+    -->
+    <gazebo>
+        <plugin name="ros_control" filename="libgazebo_ros_control.so">
+        <!--robotNamespace>/</robotNamespace-->
+        <!--robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType-->
+        </plugin>
+    </gazebo>
+
+</robot>

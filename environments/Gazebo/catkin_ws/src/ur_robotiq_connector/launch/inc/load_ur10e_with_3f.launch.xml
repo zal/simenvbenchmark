@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<launch>
+  <!--Parameter files -->
+  <arg name="ur_joint_limit_params" default="$(find ur_description)/config/ur10e/joint_limits.yaml"/>
+  <arg name="ur_kinematics_params" default="$(find ur_description)/config/ur10e/default_kinematics.yaml"/>
+  <arg name="ur_physical_params" default="$(find ur_description)/config/ur10e/physical_parameters.yaml"/>
+  <arg name="ur_visual_params" default="$(find ur_description)/config/ur10e/visual_parameters.yaml"/>
+
+  <!--Common parameters -->
+  <arg name="ur_transmission_hw_interface" default="hardware_interface/EffortJointInterface" doc="The hardware_interface to expose for each joint in the simulated robot (one of: [PositionJointInterface, VelocityJointInterface, EffortJointInterface])"/>
+  <arg name="ur_safety_limits" default="false" doc="If True, enable the safety limits controller"/>
+  <arg name="ur_safety_pos_margin" default="0.15" doc="The lower/upper limits in the safety controller" />
+  <arg name="ur_safety_k_position" default="20" doc="Used to set k position in the safety controller" />
+
+  <!-- Use common launch file and pass all arguments to it -->
+  <include file="$(dirname)/load_ur_with_3f.launch.xml" pass_all_args="true"/>
+</launch>

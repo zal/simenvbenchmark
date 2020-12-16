@@ -1,0 +1,449 @@
+<mujoco model="benchmark_case">
+    <compiler inertiafromgeom='auto' angle='radian' eulerseq='zyx'/>
+    <size njmax="5000" nconmax="1000" />
+    <option timestep='0.005' iterations='50' solver='PGS' gravity='0 0 -9.81'/>
+
+    <asset>
+        <texture type="skybox" builtin="gradient" rgb1="0.3 0.5 0.7" rgb2="0 0 0" width="512" height="512"/>
+        <texture name="texplane" type="2d" builtin="checker" rgb1=".2 .3 .4" rgb2=".1 0.15 0.2" width="512" height="512" mark="cross" markrgb=".8 .8 .8"/>      
+
+        <material name='MatPlane' reflectance='0.1' texture="texplane" texrepeat="1 1" texuniform="true"/>
+    </asset>
+
+  
+    <worldbody>
+        <geom name="floor" pos="0 0 0" size="0 0 .25" type="plane" material="MatPlane" condim="3"/>
+        
+        <body name="ball_0" pos="0.000000 0.000000 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_1" pos="0.000000 0.000000 1.210050"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_2" pos="0.000000 0.000000 1.419662"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_3" pos="0.000000 0.000000 1.630318"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_4" pos="0.000000 0.000000 1.839677"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_5" pos="0.000000 0.000000 2.049364"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_6" pos="0.000000 0.209885 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_7" pos="0.000000 0.210092 1.210092"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_8" pos="0.000000 0.209907 1.419815"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_9" pos="0.000000 0.209926 1.629779"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_10" pos="0.000000 0.210086 1.840345"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_11" pos="0.000000 0.209867 2.049336"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_12" pos="0.000000 0.419614 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_13" pos="0.000000 0.419691 1.209845"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_14" pos="0.000000 0.420121 1.420121"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_15" pos="0.000000 0.420279 1.630419"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_16" pos="0.000000 0.419657 1.839314"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_17" pos="0.000000 0.419916 2.049789"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_18" pos="0.000000 0.629499 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_19" pos="0.000000 0.630344 1.210115"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_20" pos="0.000000 0.629371 1.419581"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_21" pos="0.000000 0.630235 1.630235"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_22" pos="0.000000 0.629815 1.839753"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_23" pos="0.000000 0.629956 2.049926"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_24" pos="0.000000 0.840206 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_25" pos="0.000000 0.839468 1.209867"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_26" pos="0.000000 0.840066 1.420033"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_27" pos="0.000000 0.839628 1.629721"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_28" pos="0.000000 0.840787 1.840787"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_29" pos="0.000000 0.840099 2.050124"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_30" pos="0.000000 1.049591 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_31" pos="0.000000 1.049010 1.209802"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_32" pos="0.000000 1.049038 1.419615"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_33" pos="0.000000 1.049330 1.629598"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_34" pos="0.000000 1.050849 1.840679"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_35" pos="0.000000 1.050705 2.050705"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_36" pos="0.210193 0.000000 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_37" pos="0.209849 0.000000 1.209849"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_38" pos="0.209870 0.000000 1.419740"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_39" pos="0.209997 0.000000 1.629992"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_40" pos="0.209993 0.000000 1.839972"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_41" pos="0.209869 0.000000 2.049344"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_42" pos="0.209887 0.209887 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_43" pos="0.210085 0.210085 1.210085"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_44" pos="0.209986 0.209986 1.419973"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_45" pos="0.209964 0.209964 1.629893"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_46" pos="0.209888 0.209888 1.839552"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_47" pos="0.210023 0.210023 2.050114"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_48" pos="0.210051 0.420102 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_49" pos="0.209871 0.419742 1.209871"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_50" pos="0.210023 0.420046 1.420046"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_51" pos="0.210004 0.420008 1.630011"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_52" pos="0.210100 0.420200 1.840400"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_53" pos="0.209817 0.419633 2.049083"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_54" pos="0.209987 0.629961 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_55" pos="0.210097 0.630291 1.210097"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_56" pos="0.210175 0.630525 1.420350"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_57" pos="0.210139 0.630418 1.630418"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_58" pos="0.209908 0.629724 1.839631"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_59" pos="0.209822 0.629466 2.049110"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_60" pos="0.210136 0.840545 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_61" pos="0.210132 0.840529 1.210132"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_62" pos="0.209998 0.839992 1.419996"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_63" pos="0.209836 0.839343 1.629507"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_64" pos="0.210010 0.840041 1.840041"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_65" pos="0.209952 0.839809 2.049762"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_66" pos="0.209804 1.049020 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_67" pos="0.210059 1.050293 1.210059"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_68" pos="0.210189 1.050944 1.420377"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_69" pos="0.209910 1.049551 1.629730"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_70" pos="0.210064 1.050319 1.840256"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_71" pos="0.209919 1.049597 2.049597"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_72" pos="0.419802 0.000000 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_73" pos="0.420391 0.000000 1.210195"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_74" pos="0.419940 0.000000 1.419940"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_75" pos="0.420083 0.000000 1.630124"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_76" pos="0.419967 0.000000 1.839935"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_77" pos="0.419692 0.000000 2.049229"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_78" pos="0.420297 0.210149 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_79" pos="0.420181 0.210091 1.210091"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_80" pos="0.420222 0.210111 1.420222"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_81" pos="0.419630 0.209815 1.629446"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_82" pos="0.420004 0.210002 1.840008"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_83" pos="0.419700 0.209850 2.049250"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_84" pos="0.420401 0.420401 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_85" pos="0.420365 0.420365 1.210182"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_86" pos="0.419660 0.419660 1.419660"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_87" pos="0.419657 0.419657 1.629486"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_88" pos="0.420110 0.420110 1.840220"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_89" pos="0.419985 0.419985 2.049962"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_90" pos="0.420336 0.630504 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_91" pos="0.419885 0.629828 1.209943"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_92" pos="0.419759 0.629639 1.419759"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_93" pos="0.420049 0.630073 1.630073"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_94" pos="0.420126 0.630188 1.840251"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_95" pos="0.420349 0.630524 2.050873"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_96" pos="0.420414 0.840827 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_97" pos="0.420398 0.840796 1.210199"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_98" pos="0.419723 0.839445 1.419723"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_99" pos="0.419672 0.839344 1.629508"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_100" pos="0.419580 0.839160 1.839160"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_101" pos="0.419759 0.839519 2.049398"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_102" pos="0.419889 1.049722 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_103" pos="0.419853 1.049632 1.209926"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_104" pos="0.420167 1.050417 1.420167"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_105" pos="0.420286 1.050714 1.630429"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_106" pos="0.419690 1.049225 1.839380"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_107" pos="0.420117 1.050292 2.050292"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_108" pos="0.629716 0.000000 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_109" pos="0.629664 0.000000 1.209888"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_110" pos="0.630624 0.000000 1.420416"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_111" pos="0.629678 0.000000 1.629678"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_112" pos="0.630497 0.000000 1.840663"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_113" pos="0.629436 0.000000 2.049060"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_114" pos="0.629489 0.209830 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_115" pos="0.629479 0.209826 1.209826"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_116" pos="0.629680 0.209893 1.419787"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_117" pos="0.630031 0.210010 1.630031"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_118" pos="0.629948 0.209983 1.839931"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_119" pos="0.630084 0.210028 2.050140"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_120" pos="0.630297 0.420198 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_121" pos="0.630391 0.420261 1.210130"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_122" pos="0.630177 0.420118 1.420118"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_123" pos="0.630437 0.420291 1.630437"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_124" pos="0.629724 0.419816 1.839632"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_125" pos="0.630474 0.420316 2.050790"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_126" pos="0.630078 0.630078 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_127" pos="0.629720 0.629720 1.209907"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_128" pos="0.629719 0.629719 1.419813"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_129" pos="0.629749 0.629749 1.629749"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_130" pos="0.629535 0.629535 1.839380"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_131" pos="0.629723 0.629723 2.049538"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_132" pos="0.629901 0.839868 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_133" pos="0.629607 0.839476 1.209869"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_134" pos="0.629720 0.839627 1.419813"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_135" pos="0.630499 0.840665 1.630499"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_136" pos="0.630377 0.840502 1.840502"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_137" pos="0.629896 0.839862 2.049827"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_138" pos="0.630403 1.050672 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_139" pos="0.629397 1.048995 1.209799"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_140" pos="0.629813 1.049688 1.419875"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_141" pos="0.630027 1.050044 1.630027"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_142" pos="0.629699 1.049498 1.839598"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_143" pos="0.629704 1.049506 2.049506"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_144" pos="0.840818 0.000000 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_145" pos="0.840074 0.000000 1.210019"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_146" pos="0.839465 0.000000 1.419732"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_147" pos="0.839825 0.000000 1.629869"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_148" pos="0.840769 0.000000 1.840769"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_149" pos="0.839751 0.000000 2.049689"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_150" pos="0.840436 0.210109 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_151" pos="0.839564 0.209891 1.209891"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_152" pos="0.840165 0.210041 1.420083"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_153" pos="0.840066 0.210017 1.630050"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_154" pos="0.839597 0.209899 1.839597"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_155" pos="0.839802 0.209950 2.049752"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_156" pos="0.840564 0.420282 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_157" pos="0.840054 0.420027 1.210013"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_158" pos="0.840335 0.420167 1.420167"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_159" pos="0.839691 0.419845 1.629768"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_160" pos="0.839219 0.419610 1.839219"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_161" pos="0.839471 0.419736 2.049339"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_162" pos="0.840504 0.630378 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_163" pos="0.839361 0.629520 1.209840"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_164" pos="0.840010 0.630007 1.420005"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_165" pos="0.840584 0.630438 1.630438"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_166" pos="0.839977 0.629983 1.839977"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_167" pos="0.840702 0.630527 2.050878"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_168" pos="0.840672 0.840672 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_169" pos="0.840408 0.840408 1.210102"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_170" pos="0.840773 0.840773 1.420386"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_171" pos="0.839584 0.839584 1.629688"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_172" pos="0.840015 0.840015 1.840015"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_173" pos="0.840358 0.840358 2.050447"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_174" pos="0.840416 1.050520 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_175" pos="0.839446 1.049308 1.209862"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_176" pos="0.839216 1.049021 1.419608"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_177" pos="0.839625 1.049531 1.629719"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_178" pos="0.840056 1.050070 1.840056"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_179" pos="0.839439 1.049299 2.049299"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_180" pos="1.049974 0.000000 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_181" pos="1.049744 0.000000 1.209949"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_182" pos="1.050646 0.000000 1.420258"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_183" pos="1.049375 0.000000 1.629625"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_184" pos="1.050634 0.000000 1.840507"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_185" pos="1.049937 0.000000 2.049937"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_186" pos="1.049460 0.209892 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_187" pos="1.050271 0.210054 1.210054"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_188" pos="1.050867 0.210173 1.420347"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_189" pos="1.050158 0.210032 1.630095"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_190" pos="1.049818 0.209964 1.839855"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_191" pos="1.050144 0.210029 2.050144"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_192" pos="1.050039 0.420015 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_193" pos="1.049895 0.419958 1.209979"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_194" pos="1.050145 0.420058 1.420058"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_195" pos="1.050072 0.420029 1.630043"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_196" pos="1.050964 0.420385 1.840771"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_197" pos="1.050148 0.420059 2.050148"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_198" pos="1.050500 0.630300 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_199" pos="1.049164 0.629498 1.209833"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_200" pos="1.049650 0.629790 1.419860"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_201" pos="1.050213 0.630128 1.630128"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_202" pos="1.050496 0.630298 1.840397"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_203" pos="1.049762 0.629857 2.049762"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_204" pos="1.050544 0.840435 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_205" pos="1.050971 0.840777 1.210194"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_206" pos="1.050411 0.840329 1.420165"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_207" pos="1.048975 0.839180 1.629385"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_208" pos="1.049375 0.839500 1.839500"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_209" pos="1.050966 0.840773 2.050966"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_210" pos="1.049507 1.049507 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_211" pos="1.049500 1.049500 1.209900"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_212" pos="1.050144 1.050144 1.420058"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_213" pos="1.049322 1.049322 1.629593"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_214" pos="1.050096 1.050096 1.840077"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    
+        <body name="ball_215" pos="1.049871 1.049871 2.049871"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/></body>
+    </worldbody>
+</mujoco>

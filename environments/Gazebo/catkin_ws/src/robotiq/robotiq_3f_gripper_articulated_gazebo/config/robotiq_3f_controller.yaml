@@ -1,0 +1,60 @@
+robotiq_joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: &loop_hz 50
+
+# Effort Controllers
+robotiq_3f_controller:
+  type: effort_controllers/JointTrajectoryController
+  joints: &robot_joints
+     - finger_1_joint_1
+     - finger_1_joint_2
+     - finger_1_joint_3
+     - finger_2_joint_1
+     - finger_2_joint_2
+     - finger_2_joint_3
+     - finger_middle_joint_1
+     - finger_middle_joint_2
+     - finger_middle_joint_3
+     - palm_finger_1_joint
+     - palm_finger_2_joint
+  constraints:
+      goal_time: 0.5
+      stopped_velocity_tolerance: 0.05
+      finger_1_joint_1: {trajectory: 0.1, goal: 0.1}
+      finger_1_joint_2: {trajectory: 0.1, goal: 0.1}
+      finger_1_joint_3: {trajectory: 0.1, goal: 0.1}
+      finger_2_joint_1: {trajectory: 0.1, goal: 0.1}
+      finger_2_joint_2: {trajectory: 0.1, goal: 0.1}
+      finger_2_joint_3: {trajectory: 0.1, goal: 0.1}
+      finger_middle_joint_1: {trajectory: 0.1, goal: 0.1}
+      finger_middle_joint_2: {trajectory: 0.1, goal: 0.1}
+      finger_middle_joint_3: {trajectory: 0.1, goal: 0.1}
+      palm_finger_1_joint: {trajectory: 0.1, goal: 0.1}
+      palm_finger_2_joint: {trajectory: 0.1, goal: 0.1}
+  stop_trajectory_duration: 0.5
+  state_publish_rate:  *loop_hz
+  action_monitor_rate: 10
+  gains: # Required because we're controlling an effort interface
+    # finger_1_joint_1: {p: 10,  d: 1, i: 10, i_clamp: 0}
+    # finger_1_joint_2: {p: 100,  d: 1, i: 5, i_clamp: 0}
+    # finger_1_joint_3: {p: 10,  d: 0.5, i: 0, i_clamp: 0}
+    # finger_2_joint_1: {p: 10,  d: 1, i: 10, i_clamp: 0}
+    # finger_2_joint_2: {p: 100,  d: 1, i: 5, i_clamp: 0}
+    # finger_2_joint_3: {p: 10,  d: 0.5, i: 0, i_clamp: 0}
+    # finger_middle_joint_1: {p: 10,  d: 1, i: 10, i_clamp: 0}
+    # finger_middle_joint_2: {p: 100,  d: 1, i: 5, i_clamp: 0}
+    # finger_middle_joint_3: {p: 10,  d: 0.5, i: 0, i_clamp: 0}
+    # palm_finger_1_joint: {p: 10,  d: 0.5, i: 5, i_clamp: 0}
+    # palm_finger_2_joint: {p: 10,  d: 0.5, i: 5, i_clamp: 0}
+
+    finger_1_joint_1: {p: 100,  d: 1, i: 10, i_clamp: 0}
+    finger_1_joint_2: {p: 500,  d: 0.5, i: 5, i_clamp: 0}
+    finger_1_joint_3: {p: 100,  d: 0.5, i: 0, i_clamp: 0}
+    finger_2_joint_1: {p: 100,  d: 1, i: 10, i_clamp: 0}
+    finger_2_joint_2: {p: 500,  d: 0.5, i: 5, i_clamp: 0}
+    finger_2_joint_3: {p: 100,  d: 0.5, i: 0, i_clamp: 0}
+    finger_middle_joint_1: {p: 100,  d: 1, i: 10, i_clamp: 0}
+    finger_middle_joint_2: {p: 500,  d: 0.5, i: 5, i_clamp: 0}
+    finger_middle_joint_3: {p: 100,  d: 0.5, i: 0, i_clamp: 0}
+    palm_finger_1_joint: {p: 100,  d: 0.5, i: 5, i_clamp: 0}
+    palm_finger_2_joint: {p: 100,  d: 0.5, i: 5, i_clamp: 0}

@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<launch>
+  <!--
+  This is the top-level launch file for the benchmark simulation with UR10e and Robotiq 3f-gripper.
+  -->
+  <arg name="robot_description_file" default="$(find ur_robotiq_connector)/launch/inc/load_ur10e_with_3f.launch.xml" doc="Launch file which populates the 'robot_description' parameter."/>
+  <arg name="ur_joint_limit_params" default="$(find ur_description)/config/ur10e/joint_limits.yaml"/>
+  <arg name="ur_kinematics_params" default="$(find ur_description)/config/ur10e/default_kinematics.yaml"/>
+  <arg name="ur_physical_params" default="$(find ur_description)/config/ur10e/physical_parameters.yaml"/>
+  <arg name="ur_visual_params" default="$(find ur_description)/config/ur10e/visual_parameters.yaml"/>
+
+  <!-- Controller configuration -->
+  <arg name="ur_controller_config_file" default="$(find ur_gazebo)/config/ur10e_controllers.yaml" doc="Config file used for defining the ROS-Control controllers."/>
+  <arg name="3f_controller_config_file" default="$(find robotiq_3f_gripper_articulated_gazebo)/config/robotiq_3f_controller.yaml" doc="Config file used for defining the ROS-Control controllers."/>
+  <arg name="controllers" default="ur_joint_state_controller eff_joint_traj_controller robotiq_joint_state_controller robotiq_3f_controller" doc="Controllers that are activated by default."/>
+  <arg name="stopped_controllers" default="joint_group_eff_controller" doc="Controllers that are initally loaded, but not started."/>
+
+  <!-- robot_state_publisher configuration -->
+  <arg name="tf_prefix" default="" doc="tf_prefix used for the robot."/>
+  <arg name="tf_pub_rate" default="500" doc="Rate at which robot_state_publisher should publish transforms."/>
+
+  <!-- Gazebo parameters -->
+  <arg name="debug" default="false" doc="Activates the debug mode."/>
+  <arg name="enable_ros_network" default="true"/>
+  <arg name="gazebo_model_name" default="robot" doc="The name to give to the model in Gazebo (after spawning it)."/>
+  <arg name="gazebo_world" default="worlds/benchmark.world" doc="The '.world' file to load in Gazebo."/>
+  <arg name="gui" default="false" doc="If true, Gazebo UI is started. If false, only start Gazebo server."/>
+  <arg name="gui_required" default="false"/>
+  <arg name="output" default="screen"/>
+  <!--
+  TODO: Further investigation if there's a better workaround to Issue#93 from gazebo_ros_pkgs, see: https://github.com/ros-simulation/gazebo_ros_pkgs/issues/93
+  To be able to take the initial positions of the joints, the simulation has to start paused,
+  but as soon as the physics-engine is loaded it starts the simulation via the parameter '-unpaused'
+  in node: "spawn_gazebo_model" from gazebo_ros package in file "controller_utils.launch.xml"
+   -->
+  <arg name="paused" default="true" doc="If true, start Gazebo in paused mode. If false, start simulation as soon as Gazebo has loaded."/>
+  <arg name="physics" default="ode" doc="ODE is the default Physics-engine, Bullet and Dartsim are also implemented."/>
+  <arg name="pub_clock_frequency" default="100"/>
+  <arg name="recording" default="false"/>
+  <arg name="respawn_gazebo" default="false"/>
+  <arg name="robot_description_param_name" default="robot_description" doc="Name of the parameter which contains the robot description (ie: URDF) which should be spawned into Gazebo."/>
+  <arg name="start_gazebo" default="true" doc="If true, Gazebo will be started. If false, Gazebo will be assumed to have been started elsewhere."/>
+  <arg name="server_required" default="false"/>
+  <arg name="use_clock_frequency" default="false"/>
+  <arg name="use_sim_time" default="true"/>
+  <arg name="verbose" default="false"/>
+
+  <!-- Initial Position of the robot in meters and radians -->
+  <arg name="spawn_x" default="0.0" doc="x in meters."/>
+  <arg name="spawn_y" default="0.0" doc="y in meters."/>
+  <arg name="spawn_z" default="0.02" doc="z (height) in meters. NOTE: lower values will cause the robot to collide with the ground plane."/>
+  <arg name="spawn_R" default="0.0" doc="roll in radians."/>
+  <arg name="spawn_P" default="0.0" doc="pitch in radians."/>
+  <arg name="spawn_Y" default="0.0" doc="yaw in radians."/>
+  <!-- UR: Initial joint positions in radians -->
+  <arg name="spawn_shoulder_pan" default="1.411872641811951"/>
+  <arg name="spawn_shoulder_lift" default="-0.8420041879132294"/>
+  <arg name="spawn_elbow" default="1.0565325644929087"/>
+  <arg name="spawn_wrist_1" default="-1.7859626190435058"/>
+  <arg name="spawn_wrist_2" default="-1.5704882948679586"/>
+  <arg name="spawn_wrist_3" default="1.4109012658608595"/>
+  <!-- Robotiq-3f: Initial joint positions in radians -->
+  <arg name="spawn_f1_j1" default="0.0"/>
+  <arg name="spawn_f1_j2" default="0.0"/>
+  <arg name="spawn_f1_j3" default="0.0"/>
+  <arg name="spawn_f2_j1" default="0.0"/>
+  <arg name="spawn_f2_j2" default="0.0"/>
+  <arg name="spawn_f2_j3" default="0.0"/>
+  <arg name="spawn_mid_j1" default="0.0"/>
+  <arg name="spawn_mid_j2" default="0.0"/>
+  <arg name="spawn_mid_j3" default="0.0"/>
+  <arg name="spawn_palm_f1" default="0.0"/>
+  <arg name="spawn_palm_f2" default="0.0"/>
+
+  <!-- Use ur_robotiq_connector launch file and pass all arguments to it -->
+  <include file="$(find ur_robotiq_connector)/launch/ur10e_3f-gripper.launch" pass_all_args="true"/>
+
+</launch>

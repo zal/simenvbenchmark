@@ -1,0 +1,882 @@
+<mujoco model="benchmark_case">
+    <compiler inertiafromgeom='auto' angle='radian' eulerseq='zyx'/>
+    <size njmax="5000" nconmax="1000" />
+    <option timestep='0.005' iterations='50' solver='PGS' gravity='0 0 -9.81'/>
+
+    <asset>
+        <texture type="skybox" builtin="gradient" rgb1="0.3 0.5 0.7" rgb2="0 0 0" width="512" height="512"/>
+        <texture name="texplane" type="2d" builtin="checker" rgb1=".2 .3 .4" rgb2=".1 0.15 0.2" width="512" height="512" mark="cross" markrgb=".8 .8 .8"/>      
+
+        <material name='MatPlane' reflectance='0.1' texture="texplane" texrepeat="1 1" texuniform="true"/>
+    </asset>
+
+  
+    <worldbody>
+		<light directional='true' diffuse='1 1 1' specular='0.3 0.3 0.3' pos='0 0 0' dir='0 -.5 -1'/>
+        <light directional='true' diffuse='1 1 1' specular='0.3 0.3 0.3' pos='0 0 0' dir='.25 .25 -1'/>
+        <geom name="floor" pos="0 0 0" size="0 0 .25" type="plane" material="MatPlane" condim="3"/>
+        <body name="ball_0" pos="0.000000 0.000000 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_1" pos="0.000000 0.000000 1.209965"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_2" pos="0.000000 0.000000 1.419866"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_3" pos="0.000000 0.000000 1.629703"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_4" pos="0.000000 0.000000 1.840173"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_5" pos="0.000000 0.000000 2.049832"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_6" pos="0.000000 0.209821 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_7" pos="0.000000 0.209934 1.209934"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_8" pos="0.000000 0.209833 1.419667"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_9" pos="0.000000 0.209932 1.629797"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_10" pos="0.000000 0.210114 1.840457"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_11" pos="0.000000 0.209825 2.049123"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_12" pos="0.000000 0.420416 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_13" pos="0.000000 0.420170 1.210085"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_14" pos="0.000000 0.420387 1.420387"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_15" pos="0.000000 0.420096 1.630144"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_16" pos="0.000000 0.419681 1.839362"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_17" pos="0.000000 0.420091 2.050227"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_18" pos="0.000000 0.630180 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_19" pos="0.000000 0.630086 1.210029"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_20" pos="0.000000 0.630158 1.420106"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_21" pos="0.000000 0.630034 1.630034"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_22" pos="0.000000 0.630366 1.840488"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_23" pos="0.000000 0.630554 2.050923"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_24" pos="0.000000 0.839450 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_25" pos="0.000000 0.839765 1.209941"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_26" pos="0.000000 0.839929 1.419965"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_27" pos="0.000000 0.840278 1.630208"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_28" pos="0.000000 0.839939 1.839939"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_29" pos="0.000000 0.839991 2.049988"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_30" pos="0.000000 1.049139 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_31" pos="0.000000 1.050791 1.210158"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_32" pos="0.000000 1.049869 1.419948"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_33" pos="0.000000 1.050141 1.630085"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_34" pos="0.000000 1.049984 1.839987"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_35" pos="0.000000 1.049773 2.049773"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_36" pos="0.209968 0.000000 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_37" pos="0.210007 0.000000 1.210007"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_38" pos="0.209884 0.000000 1.419769"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_39" pos="0.210078 0.000000 1.630234"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_40" pos="0.209838 0.000000 1.839353"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_41" pos="0.209855 0.000000 2.049277"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_42" pos="0.210090 0.210090 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_43" pos="0.209829 0.209829 1.209829"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_44" pos="0.209841 0.209841 1.419683"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_45" pos="0.210142 0.210142 1.630427"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_46" pos="0.210193 0.210193 1.840772"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_47" pos="0.209804 0.209804 2.049021"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_48" pos="0.210131 0.420262 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_49" pos="0.209933 0.419865 1.209933"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_50" pos="0.209987 0.419973 1.419973"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_51" pos="0.210164 0.420328 1.630492"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_52" pos="0.209906 0.419812 1.839624"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_53" pos="0.210093 0.420187 2.050466"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_54" pos="0.210157 0.630472 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_55" pos="0.209801 0.629403 1.209801"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_56" pos="0.209890 0.629670 1.419780"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_57" pos="0.210001 0.630004 1.630004"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_58" pos="0.209894 0.629682 1.839576"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_59" pos="0.210209 0.630626 2.051044"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_60" pos="0.210205 0.840822 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_61" pos="0.210152 0.840608 1.210152"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_62" pos="0.209824 0.839295 1.419648"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_63" pos="0.210128 0.840511 1.630383"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_64" pos="0.210003 0.840013 1.840013"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_65" pos="0.209985 0.839939 2.049924"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_66" pos="0.209883 1.049415 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_67" pos="0.210003 1.050014 1.210003"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_68" pos="0.210014 1.050072 1.420029"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_69" pos="0.209808 1.049039 1.629423"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_70" pos="0.210072 1.050359 1.840288"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_71" pos="0.209792 1.048961 2.048961"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_72" pos="0.419819 0.000000 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_73" pos="0.420205 0.000000 1.210103"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_74" pos="0.420009 0.000000 1.420009"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_75" pos="0.419713 0.000000 1.629569"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_76" pos="0.419762 0.000000 1.839524"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_77" pos="0.420150 0.000000 2.050374"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_78" pos="0.419976 0.209988 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_79" pos="0.420295 0.210148 1.210148"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_80" pos="0.419700 0.209850 1.419700"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_81" pos="0.419700 0.209850 1.629550"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_82" pos="0.419958 0.209979 1.839915"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_83" pos="0.419612 0.209806 2.049029"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_84" pos="0.419607 0.419607 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_85" pos="0.420014 0.420014 1.210007"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_86" pos="0.420164 0.420164 1.420164"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_87" pos="0.419674 0.419674 1.629511"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_88" pos="0.420097 0.420097 1.840194"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_89" pos="0.419918 0.419918 2.049795"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_90" pos="0.420178 0.630267 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_91" pos="0.420027 0.630040 1.210013"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_92" pos="0.420366 0.630548 1.420366"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_93" pos="0.420326 0.630488 1.630488"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_94" pos="0.420340 0.630510 1.840680"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_95" pos="0.419882 0.629823 2.049704"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_96" pos="0.420378 0.840757 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_97" pos="0.419760 0.839520 1.209880"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_98" pos="0.419656 0.839311 1.419656"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_99" pos="0.419767 0.839535 1.629651"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_100" pos="0.419909 0.839818 1.839818"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_101" pos="0.419662 0.839323 2.049154"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_102" pos="0.419606 1.049016 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_103" pos="0.419842 1.049606 1.209921"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_104" pos="0.419700 1.049249 1.419700"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_105" pos="0.419985 1.049963 1.629978"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_106" pos="0.420333 1.050833 1.840666"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_107" pos="0.420260 1.050650 2.050650"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_108" pos="0.629847 0.000000 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_109" pos="0.630396 0.000000 1.210132"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_110" pos="0.629472 0.000000 1.419648"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_111" pos="0.630410 0.000000 1.630410"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_112" pos="0.629954 0.000000 1.839939"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_113" pos="0.630317 0.000000 2.050528"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_114" pos="0.629611 0.209870 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_115" pos="0.630267 0.210089 1.210089"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_116" pos="0.630404 0.210135 1.420269"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_117" pos="0.629523 0.209841 1.629523"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_118" pos="0.629779 0.209926 1.839706"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_119" pos="0.630313 0.210104 2.050521"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_120" pos="0.630550 0.420367 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_121" pos="0.630286 0.420190 1.210095"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_122" pos="0.630347 0.420232 1.420232"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_123" pos="0.630095 0.420064 1.630095"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_124" pos="0.630008 0.420005 1.840011"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_125" pos="0.629387 0.419591 2.048978"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_126" pos="0.629791 0.629791 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_127" pos="0.629441 0.629441 1.209814"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_128" pos="0.629702 0.629702 1.419801"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_129" pos="0.629895 0.629895 1.629895"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_130" pos="0.629467 0.629467 1.839289"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_131" pos="0.629863 0.629863 2.049771"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_132" pos="0.629612 0.839482 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_133" pos="0.630322 0.840429 1.210107"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_134" pos="0.629779 0.839705 1.419852"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_135" pos="0.630014 0.840018 1.630014"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_136" pos="0.630215 0.840286 1.840286"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_137" pos="0.629687 0.839582 2.049478"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_138" pos="0.629894 1.049823 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_139" pos="0.629601 1.049335 1.209867"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_140" pos="0.630333 1.050555 1.420222"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_141" pos="0.630331 1.050551 1.630331"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_142" pos="0.630318 1.050529 1.840423"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_143" pos="0.630302 1.050503 2.050503"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_144" pos="0.840241 0.000000 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_145" pos="0.840565 0.000000 1.210141"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_146" pos="0.839866 0.000000 1.419933"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_147" pos="0.840567 0.000000 1.630425"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_148" pos="0.840551 0.000000 1.840551"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_149" pos="0.839905 0.000000 2.049881"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_150" pos="0.839182 0.209796 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_151" pos="0.840302 0.210076 1.210076"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_152" pos="0.840301 0.210075 1.420151"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_153" pos="0.840403 0.210101 1.630302"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_154" pos="0.840648 0.210162 1.840648"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_155" pos="0.840207 0.210052 2.050258"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_156" pos="0.840730 0.420365 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_157" pos="0.840683 0.420341 1.210171"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_158" pos="0.839704 0.419852 1.419852"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_159" pos="0.840777 0.420388 1.630583"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_160" pos="0.839561 0.419781 1.839561"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_161" pos="0.840108 0.420054 2.050135"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_162" pos="0.839956 0.629967 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_163" pos="0.840560 0.630420 1.210140"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_164" pos="0.839679 0.629759 1.419839"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_165" pos="0.839176 0.629382 1.629382"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_166" pos="0.840584 0.630438 1.840584"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_167" pos="0.840133 0.630100 2.050167"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_168" pos="0.840104 0.840104 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_169" pos="0.839562 0.839562 1.209890"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_170" pos="0.840832 0.840832 1.420416"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_171" pos="0.839450 0.839450 1.629587"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_172" pos="0.839279 0.839279 1.839279"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_173" pos="0.839505 0.839505 2.049381"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_174" pos="0.840389 1.050486 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_175" pos="0.839815 1.049769 1.209954"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_176" pos="0.840039 1.050049 1.420019"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_177" pos="0.839864 1.049830 1.629898"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_178" pos="0.839508 1.049385 1.839508"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_179" pos="0.839234 1.049042 2.049042"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_180" pos="1.049972 0.000000 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_181" pos="1.050280 0.000000 1.210056"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_182" pos="1.050861 0.000000 1.420344"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_183" pos="1.049551 0.000000 1.629730"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_184" pos="1.050417 0.000000 1.840334"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_185" pos="1.049477 0.000000 2.049477"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_186" pos="1.050181 0.210036 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_187" pos="1.050114 0.210023 1.210023"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_188" pos="1.049881 0.209976 1.419952"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_189" pos="1.050800 0.210160 1.630480"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_190" pos="1.050000 0.210000 1.840000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_191" pos="1.049408 0.209882 2.049408"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_192" pos="1.049450 0.419780 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_193" pos="1.050545 0.420218 1.210109"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_194" pos="1.049347 0.419739 1.419739"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_195" pos="1.049559 0.419824 1.629735"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_196" pos="1.050052 0.420021 1.840041"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_197" pos="1.049784 0.419914 2.049784"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_198" pos="1.050752 0.630451 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_199" pos="1.049325 0.629595 1.209865"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_200" pos="1.050302 0.630181 1.420121"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_201" pos="1.048963 0.629378 1.629378"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_202" pos="1.050019 0.630011 1.840015"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_203" pos="1.050954 0.630573 2.050954"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_204" pos="1.049801 0.839841 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_205" pos="1.049320 0.839456 1.209864"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_206" pos="1.049077 0.839262 1.419631"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_207" pos="1.049822 0.839858 1.629893"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_208" pos="1.049669 0.839735 1.839735"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_209" pos="1.050665 0.840532 2.050665"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_210" pos="1.048989 1.048989 1.000000"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_211" pos="1.050601 1.050601 1.210120"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_212" pos="1.050485 1.050485 1.420194"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_213" pos="1.049718 1.049718 1.629831"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_214" pos="1.050738 1.050738 1.840591"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    
+        <body name="ball_215" pos="1.049401 1.049401 2.049401"><geom type="sphere" size="0.100000" mass="10.000000" rgba=".7 .3 .3 1"/>
+			<joint type='free'/>
+		</body>
+    </worldbody>
+</mujoco>

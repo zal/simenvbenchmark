@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://wiki.ros.org/xacro" name="ur10e_3f-gripper">
+
+  <!-- Import main macro for UR(10e) & Robotiq 3f -->
+  <xacro:include filename="$(find ur_gazebo)/urdf/ur_macro.xacro"/>
+  <xacro:include filename="$(find robotiq_3f_gripper_visualization)/cfg/robotiq-3f-gripper_articulated_macro_transmissions.xacro" />
+
+  <!--Declare arguments -->
+  <xacro:arg name="ur_joint_limit_params" default="$(find ur_description)/config/ur10e/joint_limits.yaml"/>
+  <xacro:arg name="ur_kinematics_params" default="$(find ur_description)/config/ur10e/default_kinematics.yaml"/>
+  <xacro:arg name="ur_physical_params" default="$(find ur_description)/config/ur10e/physical_parameters.yaml"/>
+  <xacro:arg name="ur_visual_params" default="$(find ur_description)/config/ur10e/visual_parameters.yaml"/>
+  <!--
+    legal values:
+      - hardware_interface/PositionJointInterface
+      - hardware_interface/VelocityJointInterface
+      - hardware_interface/EffortJointInterface
+
+    NOTE: this value must correspond to the controller configured in the
+          controller .yaml files in the 'config' directory.
+  -->
+  <xacro:arg name="ur_transmission_hw_interface" default="hardware_interface/EffortJointInterface"/>
+  <xacro:arg name="ur_safety_limits" default="false"/>
+  <xacro:arg name="ur_safety_pos_margin" default="0.15"/>
+  <xacro:arg name="ur_safety_k_position" default="20"/>
+  <xacro:property name="flange_hand">
+    <origin xyz="0.0 0.0 0.045" rpy="${pi/2} 0.0 0.0"/>
+  </xacro:property>
+
+  <!-- Instantiate the UR(10e) robot and pass it all the required arguments. -->
+  <xacro:ur_robot_gazebo
+    prefix=""
+    joint_limits_parameters_file="$(arg ur_joint_limit_params)"
+    kinematics_parameters_file="$(arg ur_kinematics_params)"
+    physical_parameters_file="$(arg ur_physical_params)"
+    visual_parameters_file="$(arg ur_visual_params)"
+    transmission_hw_interface="$(arg ur_transmission_hw_interface)"
+    safety_limits="$(arg ur_safety_limits)"
+    safety_pos_margin="$(arg ur_safety_pos_margin)"
+    safety_k_position="$(arg ur_safety_k_position)"
+  />
+
+  <!-- Load the Gazebo standard parameter "world" and fix the base of the UR(10e). -->
+  <link name="world"/>
+  <joint name="world_joint" type="fixed">
+    <parent link="world"/>
+    <child link="base_link"/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+  </joint>
+
+  <xacro:robotiq-3f-gripper_articulated prefix="" parent="tool0">
+      <xacro:insert_block name="flange_hand"/>
+  </xacro:robotiq-3f-gripper_articulated>
+
+</robot>

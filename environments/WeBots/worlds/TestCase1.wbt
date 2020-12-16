@@ -1,0 +1,710 @@
+#VRML_SIM R2020b utf8
+WorldInfo {
+  basicTimeStep 1
+  contactProperties [
+    ContactProperties {
+      material2 "cylinder"
+      coulombFriction [
+        0.45
+      ]
+      bounce 0
+    }
+  ]
+}
+Viewpoint {
+  orientation -0.3861129809710583 -0.5385889786813753 -0.7488916329941174 4.059202662646322
+  position 3.3868056148940644 1.8283056173042127 1.550558141928886
+}
+Background {
+  skyColor [
+    0.7 0.7 0.7
+  ]
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+DirectionalLight {
+  ambientIntensity 1
+  direction 0.1 -0.5 0.3
+}
+RectangleArena {
+  translation 0 0.75 0.02
+  rotation 1 0 0 1.5708
+  floorSize 2.6 1.8
+  wallHeight 0.04
+}
+DEF arm UR10e {
+  hidden position_0_0 1.411872641811951
+  hidden rotation_1 0 0 1 1.411872641811951
+  hidden position_1_0 -0.8420041879132294
+  hidden rotation_2 0 1 0 0.7287918120867689
+  hidden position_2_0 1.0565325644929087
+  hidden rotation_3 0 1 0 1.0565325644929089
+  hidden position_3_0 -1.7859626190435058
+  hidden rotation_4 0 -0.9999999999999999 0 0.21516661904350773
+  hidden position_4_0 -1.5704882948679586
+  hidden rotation_5 0 0 -1 1.5704882948679584
+  hidden position_5_0 1.4109012658608595
+  hidden rotation_6 0 1 0 1.4109012658608595
+  translation 0 0 0.02
+  rotation 1 0 0 0
+  controller "<extern>"
+  supervisor TRUE
+  selfCollision FALSE
+  toolSlot [
+    DEF gripper Robotiq3fGripper {
+    }
+  ]
+}
+DEF cylinder_1 Solid {
+  translation 0 1 0.07
+  rotation 1 0 0 1.5708
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.7 0.3 0.3
+          emissiveColor 0.7 0.3 0.3
+          shininess 0
+        }
+      }
+      geometry Cylinder {
+        height 0.1
+        radius 0.02
+      }
+    }
+  ]
+  name "Cylinder_1"
+  contactMaterial "cylinder"
+  boundingObject Shape {
+    geometry Cylinder {
+      height 0.1
+      radius 0.02
+    }
+  }
+  physics Physics {
+    damping Damping {
+    }
+  }
+}
+DEF cylinder_2_1 Solid {
+  translation 0 1.1 0.07
+  rotation 1 0 0 1.5708
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.3 0.7 0.3
+          emissiveColor 0.3 0.7 0.3
+          shininess 0
+        }
+      }
+      geometry Cylinder {
+        height 0.1
+        radius 0.02
+      }
+    }
+  ]
+  name "Cylinder_2.1"
+  contactMaterial "cylinder"
+  boundingObject Shape {
+    geometry Cylinder {
+      height 0.1
+      radius 0.02
+    }
+  }
+  physics Physics {
+    damping Damping {
+    }
+  }
+}
+DEF cylinder_2_2 Solid {
+  translation 0.071 1.071 0.07
+  rotation 1 0 0 1.5708
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.3 0.7 0.3
+          emissiveColor 0.3 0.7 0.3
+          shininess 0
+        }
+      }
+      geometry Cylinder {
+        height 0.1
+        radius 0.02
+      }
+    }
+  ]
+  name "Cylinder_2.2"
+  contactMaterial "cylinder"
+  boundingObject Shape {
+    geometry Cylinder {
+      height 0.1
+      radius 0.02
+    }
+  }
+  physics Physics {
+    damping Damping {
+    }
+  }
+}
+DEF cylinder_2_3 Solid {
+  translation 0.1 1 0.07
+  rotation 1 0 0 1.5708
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.3 0.7 0.3
+          emissiveColor 0.3 0.7 0.3
+          shininess 0
+        }
+      }
+      geometry Cylinder {
+        height 0.1
+        radius 0.02
+      }
+    }
+  ]
+  name "Cylinder_2.3"
+  contactMaterial "cylinder"
+  boundingObject Shape {
+    geometry Cylinder {
+      height 0.1
+      radius 0.02
+    }
+  }
+  physics Physics {
+    damping Damping {
+    }
+  }
+}
+DEF cylinder_2_4 Solid {
+  translation 0.071 0.929 0.07
+  rotation 1 0 0 1.5708
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.3 0.7 0.3
+          emissiveColor 0.3 0.7 0.3
+          shininess 0
+        }
+      }
+      geometry Cylinder {
+        height 0.1
+        radius 0.02
+      }
+    }
+  ]
+  name "Cylinder_2.4"
+  contactMaterial "cylinder"
+  boundingObject Shape {
+    geometry Cylinder {
+      height 0.1
+      radius 0.02
+    }
+  }
+  physics Physics {
+    damping Damping {
+    }
+  }
+}
+DEF cylinder_2_5 Solid {
+  translation 0 0.9 0.07
+  rotation 1 0 0 1.5708
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.3 0.7 0.3
+          emissiveColor 0.3 0.7 0.3
+          shininess 0
+        }
+      }
+      geometry Cylinder {
+        height 0.1
+        radius 0.02
+      }
+    }
+  ]
+  name "Cylinder_2.5"
+  contactMaterial "cylinder"
+  boundingObject Shape {
+    geometry Cylinder {
+      height 0.1
+      radius 0.02
+    }
+  }
+  physics Physics {
+    damping Damping {
+    }
+  }
+}
+DEF cylinder_2_6 Solid {
+  translation -0.071 0.929 0.07
+  rotation 1 0 0 1.5708
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.3 0.7 0.3
+          emissiveColor 0.3 0.7 0.3
+          shininess 0
+        }
+      }
+      geometry Cylinder {
+        height 0.1
+        radius 0.02
+      }
+    }
+  ]
+  name "Cylinder_2.6"
+  contactMaterial "cylinder"
+  boundingObject Shape {
+    geometry Cylinder {
+      height 0.1
+      radius 0.02
+    }
+  }
+  physics Physics {
+    damping Damping {
+    }
+  }
+}
+DEF cylinder_2_7 Solid {
+  translation -0.1 1 0.07
+  rotation 1 0 0 1.5708
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.3 0.7 0.3
+          emissiveColor 0.3 0.7 0.3
+          shininess 0
+        }
+      }
+      geometry Cylinder {
+        height 0.1
+        radius 0.02
+      }
+    }
+  ]
+  name "Cylinder_2.7"
+  contactMaterial "cylinder"
+  boundingObject Shape {
+    geometry Cylinder {
+      height 0.1
+      radius 0.02
+    }
+  }
+  physics Physics {
+    damping Damping {
+    }
+  }
+}
+DEF cylinder_2_8 Solid {
+  translation -0.071 1.071 0.07
+  rotation 1 0 0 1.5708
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.3 0.7 0.3
+          emissiveColor 0.3 0.7 0.3
+          shininess 0
+        }
+      }
+      geometry Cylinder {
+        height 0.1
+        radius 0.02
+      }
+    }
+  ]
+  name "Cylinder_2.8"
+  contactMaterial "cylinder"
+  boundingObject Shape {
+    geometry Cylinder {
+      height 0.1
+      radius 0.02
+    }
+  }
+  physics Physics {
+    damping Damping {
+    }
+  }
+}
+DEF cylinder_3_1 Solid {
+  translation 0 1.2 0.07
+  rotation 1 0 0 1.5708
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.3 0.3 0.7
+          emissiveColor 0.3 0.3 0.7
+          shininess 0
+        }
+      }
+      geometry Cylinder {
+        height 0.1
+        radius 0.02
+      }
+    }
+  ]
+  name "Cylinder_3.1"
+  contactMaterial "cylinder"
+  boundingObject Shape {
+    geometry Cylinder {
+      height 0.1
+      radius 0.02
+    }
+  }
+  physics Physics {
+    damping Damping {
+    }
+  }
+}
+DEF cylinder_3_2 Solid {
+  translation 0.1 1.173 0.07
+  rotation 1 0 0 1.5708
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.3 0.3 0.7
+          emissiveColor 0.3 0.3 0.7
+          shininess 0
+        }
+      }
+      geometry Cylinder {
+        height 0.1
+        radius 0.02
+      }
+    }
+  ]
+  name "Cylinder_3.2"
+  contactMaterial "cylinder"
+  boundingObject Shape {
+    geometry Cylinder {
+      height 0.1
+      radius 0.02
+    }
+  }
+  physics Physics {
+    damping Damping {
+    }
+  }
+}
+DEF cylinder_3_3 Solid {
+  translation 0.171 1.104 0.07
+  rotation 1 0 0 1.5708
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.3 0.3 0.7
+          emissiveColor 0.3 0.3 0.7
+          shininess 0
+        }
+      }
+      geometry Cylinder {
+        height 0.1
+        radius 0.02
+      }
+    }
+  ]
+  name "Cylinder_3.3"
+  contactMaterial "cylinder"
+  boundingObject Shape {
+    geometry Cylinder {
+      height 0.1
+      radius 0.02
+    }
+  }
+  physics Physics {
+    damping Damping {
+    }
+  }
+}
+DEF cylinder_3_4 Solid {
+  translation 0.2 1 0.07
+  rotation 1 0 0 1.5708
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.3 0.3 0.7
+          emissiveColor 0.3 0.3 0.7
+          shininess 0
+        }
+      }
+      geometry Cylinder {
+        height 0.1
+        radius 0.02
+      }
+    }
+  ]
+  name "Cylinder_3.4"
+  contactMaterial "cylinder"
+  boundingObject Shape {
+    geometry Cylinder {
+      height 0.1
+      radius 0.02
+    }
+  }
+  physics Physics {
+    damping Damping {
+    }
+  }
+}
+DEF cylinder_3_5 Solid {
+  translation 0.171 0.896 0.07
+  rotation 1 0 0 1.5708
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.3 0.3 0.7
+          emissiveColor 0.3 0.3 0.7
+          shininess 0
+        }
+      }
+      geometry Cylinder {
+        height 0.1
+        radius 0.02
+      }
+    }
+  ]
+  name "Cylinder_3.5"
+  contactMaterial "cylinder"
+  boundingObject Shape {
+    geometry Cylinder {
+      height 0.1
+      radius 0.02
+    }
+  }
+  physics Physics {
+    damping Damping {
+    }
+  }
+}
+DEF cylinder_3_6 Solid {
+  translation 0.1 0.827 0.07
+  rotation 1 0 0 1.5708
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.3 0.3 0.7
+          emissiveColor 0.3 0.3 0.7
+          shininess 0
+        }
+      }
+      geometry Cylinder {
+        height 0.1
+        radius 0.02
+      }
+    }
+  ]
+  name "Cylinder_3.6"
+  contactMaterial "cylinder"
+  boundingObject Shape {
+    geometry Cylinder {
+      height 0.1
+      radius 0.02
+    }
+  }
+  physics Physics {
+    damping Damping {
+    }
+  }
+}
+DEF cylinder_3_7 Solid {
+  translation 0 0.8 0.07
+  rotation 1 0 0 1.5708
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.3 0.3 0.7
+          emissiveColor 0.3 0.3 0.7
+          shininess 0
+        }
+      }
+      geometry Cylinder {
+        height 0.1
+        radius 0.02
+      }
+    }
+  ]
+  name "Cylinder_3.7"
+  contactMaterial "cylinder"
+  boundingObject Shape {
+    geometry Cylinder {
+      height 0.1
+      radius 0.02
+    }
+  }
+  physics Physics {
+    damping Damping {
+    }
+  }
+}
+DEF cylinder_3_8 Solid {
+  translation -0.1 0.827 0.07
+  rotation 1 0 0 1.5708
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.3 0.3 0.7
+          emissiveColor 0.3 0.3 0.7
+          shininess 0
+        }
+      }
+      geometry Cylinder {
+        height 0.1
+        radius 0.02
+      }
+    }
+  ]
+  name "Cylinder_3.8"
+  contactMaterial "cylinder"
+  boundingObject Shape {
+    geometry Cylinder {
+      height 0.1
+      radius 0.02
+    }
+  }
+  physics Physics {
+    damping Damping {
+    }
+  }
+}
+DEF cylinder_3_9 Solid {
+  translation -0.171 0.896 0.07
+  rotation 1 0 0 1.5708
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.3 0.3 0.7
+          emissiveColor 0.3 0.3 0.7
+          shininess 0
+        }
+      }
+      geometry Cylinder {
+        height 0.1
+        radius 0.02
+      }
+    }
+  ]
+  name "Cylinder_3.9"
+  contactMaterial "cylinder"
+  boundingObject Shape {
+    geometry Cylinder {
+      height 0.1
+      radius 0.02
+    }
+  }
+  physics Physics {
+    damping Damping {
+    }
+  }
+}
+DEF cylinder_3_10 Solid {
+  translation -0.2 1 0.07
+  rotation 1 0 0 1.5708
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.3 0.3 0.7
+          emissiveColor 0.3 0.3 0.7
+          shininess 0
+        }
+      }
+      geometry Cylinder {
+        height 0.1
+        radius 0.02
+      }
+    }
+  ]
+  name "Cylinder_3.10"
+  contactMaterial "cylinder"
+  boundingObject Shape {
+    geometry Cylinder {
+      height 0.1
+      radius 0.02
+    }
+  }
+  physics Physics {
+    damping Damping {
+    }
+  }
+}
+DEF cylinder_3_11 Solid {
+  translation -0.171 1.104 0.07
+  rotation 1 0 0 1.5708
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.3 0.3 0.7
+          emissiveColor 0.3 0.3 0.7
+          shininess 0
+        }
+      }
+      geometry Cylinder {
+        height 0.1
+        radius 0.02
+      }
+    }
+  ]
+  name "Cylinder_3.11"
+  contactMaterial "cylinder"
+  boundingObject Shape {
+    geometry Cylinder {
+      height 0.1
+      radius 0.02
+    }
+  }
+  physics Physics {
+    damping Damping {
+    }
+  }
+}
+DEF cylinder_3_12 Solid {
+  translation -0.1 1.173 0.07
+  rotation 1 0 0 1.5708
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.3 0.3 0.7
+          emissiveColor 0.3 0.3 0.7
+          shininess 0
+        }
+      }
+      geometry Cylinder {
+        height 0.1
+        radius 0.02
+      }
+    }
+  ]
+  name "Cylinder_3.12"
+  contactMaterial "cylinder"
+  boundingObject Shape {
+    geometry Cylinder {
+      height 0.1
+      radius 0.02
+    }
+  }
+  physics Physics {
+    damping Damping {
+    }
+  }
+}

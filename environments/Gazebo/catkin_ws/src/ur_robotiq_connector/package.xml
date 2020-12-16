@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>ur_robotiq_connector</name>
+  <version>0.0.0</version>
+  <description>
+      Connector package for Universal Robot (UR10e) and Robotiq end-effector (till now: 3f-gripper).
+  </description>
+  <maintainer email="stephan.rediske@zal.aero">Stephan Rediske</maintainer>
+
+  <license>MIT</license>
+
+  <url type="website">https://www.zal.aero</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <test_depend>roslaunch</test_depend>
+  <exec_depend>controller_manager</exec_depend>
+  <exec_depend>effort_controllers</exec_depend>
+  <exec_depend>gazebo_ros</exec_depend>
+  <exec_depend>gazebo_ros_control</exec_depend>
+  <exec_depend>joint_state_controller</exec_depend>
+  <exec_depend>joint_trajectory_controller</exec_depend>
+  <exec_depend>position_controllers</exec_depend>
+  <exec_depend>robotiq</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>ur_description</exec_depend>
+  <exec_depend>ur_gazebo</exec_depend>
+
+  <export>
+  </export>
+</package>

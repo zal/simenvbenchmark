@@ -1,0 +1,100 @@
+<?xml version="1.0" ?>
+<sdf version="1.7">
+  <model name="base_plate">
+    <static>false</static>
+    <link name="base_plate">
+        <visual name="bottom">
+            <pose>0 0.0 0.0 0 0 0</pose>
+            <geometry>
+                <box>
+                    <size>2.6 1.8 0.02</size>
+                </box>
+            </geometry>
+            <material>
+                <ambient>0.7 0.7 0.7 1</ambient>
+                <diffuse>0.7 0.7 0.7 1</diffuse>
+                <specular>0.7 0.7 0.7 1</specular>
+                <emissive>0.7 0.7 0.7 1</emissive>
+            </material>
+        </visual>
+        <collision name="bottom">
+            <pose>0 0.0 0.0 0 0 0</pose>
+            <geometry>
+                <box>
+                    <size>2.6 1.8 0.02</size>
+                </box>
+            </geometry>
+        </collision>
+        <visual name="wall_short_1">
+            <pose>1.31 0.0 0.02</pose>
+            <geometry>
+                <box>
+                    <size>0.02 1.8 0.06</size>
+                </box>
+            </geometry>
+            <material>
+                <ambient>0.7 0.7 0.7 1</ambient>
+                <diffuse>0.7 0.7 0.7 1</diffuse>
+                <specular>0.7 0.7 0.7 1</specular>
+                <emissive>0.7 0.7 0.7 1</emissive>
+            </material>
+        </visual>
+        <collision name="wall_short_1">
+            <pose>1.31 0.0 0.02</pose>
+            <geometry>
+                <box>
+                    <size>0.02 1.8 0.06</size>
+                </box>
+            </geometry>
+        </collision>
+        <visual name="wall_short_2">
+            <pose>-1.31 0.0 0.02</pose>
+            <geometry>
+                <box>
+                    <size>0.02 1.8 0.06</size>
+                </box>
+            </geometry>
+        </visual>
+        <collision name="wall_short_2">
+            <pose>-1.31 0.0 0.02</pose>
+            <geometry>
+                <box>
+                    <size>0.02 1.8 0.06</size>
+                </box>
+            </geometry>
+        </collision>
+        <visual name="wall_long_1">
+            <pose>0 -0.91 0.02</pose>
+            <geometry>
+                <box>
+                    <size>2.64 0.02 0.06</size>
+                </box>
+            </geometry>
+        </visual>
+        <collision name="wall_long_1">
+            <pose>0 -0.91 0.02</pose>
+            <geometry>
+                <box>
+                    <size>2.64 0.02 0.06</size>
+                </box>
+            </geometry>
+        </collision>
+        <visual name="wall_long_2">
+            <pose>0 0.91 0.02</pose>
+            <geometry>
+                <box>
+                    <size>2.64 0.02 0.06</size>
+                </box>
+            </geometry>
+        </visual>
+        <collision name="wall_long_2">
+            <pose>0 0.91 0.02</pose>
+            <geometry>
+                <box>
+                    <size>2.64 0.02 0.06</size>
+                </box>
+            </geometry>
+        </collision>
+    </link>
+  </model>
+</sdf>

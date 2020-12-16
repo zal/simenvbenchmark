@@ -1,0 +1,2846 @@
+#VRML_SIM R2021a utf8
+    WorldInfo {
+      basicTimeStep 1
+      physicsDisableLinearThreshold 0.1
+      physicsDisableAngularThreshold 0.1
+      randomSeed 1
+      contactProperties [
+        ContactProperties {
+          coulombFriction [
+            0
+          ]
+          bounce 0
+        }
+      ]
+    }
+    Viewpoint {
+      orientation -0.37220907837548917 -0.43373683065992874 -0.8205685612451584 4.36862663557948
+      position 9.000484046328555 2.1487996545325165 6.210177115077761
+    }
+    Background {
+      skyColor [
+        0.7 0.7 0.7
+      ]
+    }
+    DirectionalLight {
+      ambientIntensity 1
+      direction 0.1 -0.5 0.3
+    }
+    RectangleArena {
+      translation 0 0.75 0.02
+      rotation 1 0 0 1.5707996938995747
+      floorSize 100 100
+      wallHeight 0.04
+    }
+    Robot {
+      controller "<extern>"
+      supervisor TRUE
+    }
+    DEF ball_0 Ball {
+        translation 0.000000 0.000000 1.000000
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_0"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_1 Ball {
+        translation 0.000000 0.000000 1.210081
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_1"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_2 Ball {
+        translation 0.000000 0.000000 1.420331
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_2"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_3 Ball {
+        translation 0.000000 0.000000 1.630307
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_3"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_4 Ball {
+        translation 0.000000 0.000000 1.839771
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_4"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_5 Ball {
+        translation 0.000000 0.000000 2.050343
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_5"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_6 Ball {
+        translation 0.000000 0.209996 1.000000
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_6"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_7 Ball {
+        translation 0.000000 0.209943 1.209943
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_7"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_8 Ball {
+        translation 0.000000 0.210186 1.420373
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_8"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_9 Ball {
+        translation 0.000000 0.209839 1.629517
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_9"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_10 Ball {
+        translation 0.000000 0.210099 1.840394
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_10"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_11 Ball {
+        translation 0.000000 0.209896 2.049480
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_11"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_12 Ball {
+        translation 0.000000 0.420156 1.000000
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_12"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_13 Ball {
+        translation 0.000000 0.419773 1.209887
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_13"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_14 Ball {
+        translation 0.000000 0.419986 1.419986
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_14"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_15 Ball {
+        translation 0.000000 0.419876 1.629814
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_15"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_16 Ball {
+        translation 0.000000 0.420407 1.840814
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_16"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_17 Ball {
+        translation 0.000000 0.419723 2.049308
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_17"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_18 Ball {
+        translation 0.000000 0.630114 1.000000
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_18"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_19 Ball {
+        translation 0.000000 0.629432 1.209811
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_19"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_20 Ball {
+        translation 0.000000 0.629377 1.419584
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_20"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_21 Ball {
+        translation 0.000000 0.630134 1.630134
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_21"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_22 Ball {
+        translation 0.000000 0.629544 1.839393
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_22"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_23 Ball {
+        translation 0.000000 0.630510 2.050851
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_23"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_24 Ball {
+        translation 0.000000 0.840836 1.000000
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_24"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_25 Ball {
+        translation 0.000000 0.839852 1.209963
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_25"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_26 Ball {
+        translation 0.000000 0.839632 1.419816
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_26"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_27 Ball {
+        translation 0.000000 0.840009 1.630007
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_27"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_28 Ball {
+        translation 0.000000 0.839452 1.839452
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_28"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_29 Ball {
+        translation 0.000000 0.840325 2.050406
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_29"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_30 Ball {
+        translation 0.000000 1.049617 1.000000
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_30"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_31 Ball {
+        translation 0.000000 1.050050 1.210010
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_31"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_32 Ball {
+        translation 0.000000 1.050140 1.420056
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_32"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_33 Ball {
+        translation 0.000000 1.050614 1.630368
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_33"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_34 Ball {
+        translation 0.000000 1.049690 1.839752
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_34"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_35 Ball {
+        translation 0.000000 1.050589 2.050589
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_35"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_36 Ball {
+        translation 0.209825 0.000000 1.000000
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_36"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_37 Ball {
+        translation 0.210055 0.000000 1.210055
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_37"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_38 Ball {
+        translation 0.210054 0.000000 1.420108
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_38"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_39 Ball {
+        translation 0.209947 0.000000 1.629842
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_39"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_40 Ball {
+        translation 0.209980 0.000000 1.839920
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_40"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_41 Ball {
+        translation 0.209817 0.000000 2.049084
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_41"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_42 Ball {
+        translation 0.210178 0.210178 1.000000
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_42"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_43 Ball {
+        translation 0.209901 0.209901 1.209901
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_43"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_44 Ball {
+        translation 0.209938 0.209938 1.419876
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_44"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_45 Ball {
+        translation 0.210004 0.210004 1.630013
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_45"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_46 Ball {
+        translation 0.209987 0.209987 1.839950
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_46"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_47 Ball {
+        translation 0.209945 0.209945 2.049726
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_47"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_48 Ball {
+        translation 0.210013 0.420027 1.000000
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_48"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_49 Ball {
+        translation 0.209916 0.419831 1.209916
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_49"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_50 Ball {
+        translation 0.210092 0.420183 1.420183
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_50"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_51 Ball {
+        translation 0.210101 0.420201 1.630302
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_51"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_52 Ball {
+        translation 0.209991 0.419982 1.839964
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_52"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_53 Ball {
+        translation 0.210061 0.420123 2.050307
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_53"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_54 Ball {
+        translation 0.209813 0.629439 1.000000
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_54"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_55 Ball {
+        translation 0.209881 0.629642 1.209881
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_55"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_56 Ball {
+        translation 0.210067 0.630201 1.420134
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_56"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_57 Ball {
+        translation 0.210130 0.630389 1.630389
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_57"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_58 Ball {
+        translation 0.209909 0.629726 1.839635
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_58"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_59 Ball {
+        translation 0.209833 0.629498 2.049164
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_59"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_60 Ball {
+        translation 0.210064 0.840257 1.000000
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_60"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_61 Ball {
+        translation 0.210048 0.840190 1.210048
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_61"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_62 Ball {
+        translation 0.209989 0.839955 1.419977
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_62"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_63 Ball {
+        translation 0.209911 0.839642 1.629732
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_63"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_64 Ball {
+        translation 0.209841 0.839366 1.839366
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_64"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_65 Ball {
+        translation 0.209981 0.839925 2.049906
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_65"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_66 Ball {
+        translation 0.209899 1.049496 1.000000
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_66"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_67 Ball {
+        translation 0.210104 1.050521 1.210104
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_67"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_68 Ball {
+        translation 0.210092 1.050461 1.420184
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_68"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_69 Ball {
+        translation 0.210076 1.050378 1.630227
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_69"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_70 Ball {
+        translation 0.210107 1.050537 1.840430
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_70"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_71 Ball {
+        translation 0.209803 1.049013 2.049013
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_71"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_72 Ball {
+        translation 0.420345 0.000000 1.000000
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_72"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_73 Ball {
+        translation 0.419937 0.000000 1.209969
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_73"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_74 Ball {
+        translation 0.419926 0.000000 1.419926
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_74"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_75 Ball {
+        translation 0.419713 0.000000 1.629570
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_75"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_76 Ball {
+        translation 0.420062 0.000000 1.840123
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_76"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_77 Ball {
+        translation 0.420357 0.000000 2.050892
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_77"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_78 Ball {
+        translation 0.419731 0.209865 1.000000
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_78"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_79 Ball {
+        translation 0.419749 0.209875 1.209875
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_79"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_80 Ball {
+        translation 0.419661 0.209830 1.419661
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_80"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_81 Ball {
+        translation 0.419729 0.209865 1.629594
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_81"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_82 Ball {
+        translation 0.420337 0.210169 1.840674
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_82"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_83 Ball {
+        translation 0.420192 0.210096 2.050480
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_83"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_84 Ball {
+        translation 0.419889 0.419889 1.000000
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_84"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_85 Ball {
+        translation 0.419806 0.419806 1.209903
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_85"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_86 Ball {
+        translation 0.420074 0.420074 1.420074
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_86"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_87 Ball {
+        translation 0.419823 0.419823 1.629735
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_87"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_88 Ball {
+        translation 0.420315 0.420315 1.840630
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_88"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_89 Ball {
+        translation 0.420301 0.420301 2.050753
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_89"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_90 Ball {
+        translation 0.419841 0.629762 1.000000
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_90"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_91 Ball {
+        translation 0.420419 0.630628 1.210209
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_91"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_92 Ball {
+        translation 0.419787 0.629681 1.419787
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_92"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_93 Ball {
+        translation 0.420278 0.630418 1.630418
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_93"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_94 Ball {
+        translation 0.420273 0.630410 1.840546
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_94"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_95 Ball {
+        translation 0.420338 0.630507 2.050845
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_95"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_96 Ball {
+        translation 0.420028 0.840057 1.000000
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_96"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_97 Ball {
+        translation 0.420125 0.840251 1.210063
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_97"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_98 Ball {
+        translation 0.419659 0.839317 1.419659
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_98"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_99 Ball {
+        translation 0.419693 0.839387 1.629540
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_99"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_100 Ball {
+        translation 0.420156 0.840311 1.840311
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_100"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_101 Ball {
+        translation 0.420282 0.840564 2.050704
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_101"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_102 Ball {
+        translation 0.420110 1.050275 1.000000
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_102"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_103 Ball {
+        translation 0.420365 1.050911 1.210182
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_103"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_104 Ball {
+        translation 0.419801 1.049502 1.419801
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_104"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_105 Ball {
+        translation 0.419662 1.049155 1.629493
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_105"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_106 Ball {
+        translation 0.419962 1.049906 1.839924
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_106"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_107 Ball {
+        translation 0.419709 1.049272 2.049272
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_107"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_108 Ball {
+        translation 0.629570 0.000000 1.000000
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_108"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_109 Ball {
+        translation 0.630615 0.000000 1.210205
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_109"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_110 Ball {
+        translation 0.630274 0.000000 1.420183
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_110"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_111 Ball {
+        translation 0.630620 0.000000 1.630620
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_111"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_112 Ball {
+        translation 0.630085 0.000000 1.840113
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_112"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_113 Ball {
+        translation 0.629717 0.000000 2.049529
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_113"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_114 Ball {
+        translation 0.630547 0.210182 1.000000
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_114"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_115 Ball {
+        translation 0.629978 0.209993 1.209993
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_115"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_116 Ball {
+        translation 0.629502 0.209834 1.419668
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_116"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_117 Ball {
+        translation 0.630051 0.210017 1.630051
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_117"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_118 Ball {
+        translation 0.629459 0.209820 1.839279
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_118"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_119 Ball {
+        translation 0.629599 0.209866 2.049331
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_119"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_120 Ball {
+        translation 0.630369 0.420246 1.000000
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_120"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_121 Ball {
+        translation 0.630358 0.420239 1.210119
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_121"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_122 Ball {
+        translation 0.630121 0.420081 1.420081
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_122"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_123 Ball {
+        translation 0.629592 0.419728 1.629592
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_123"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_124 Ball {
+        translation 0.630444 0.420296 1.840592
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_124"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_125 Ball {
+        translation 0.630564 0.420376 2.050941
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_125"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_126 Ball {
+        translation 0.630247 0.630247 1.000000
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_126"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_127 Ball {
+        translation 0.630217 0.630217 1.210072
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_127"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_128 Ball {
+        translation 0.630533 0.630533 1.420356
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_128"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_129 Ball {
+        translation 0.629522 0.629522 1.629522
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_129"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_130 Ball {
+        translation 0.629637 0.629637 1.839516
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_130"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_131 Ball {
+        translation 0.629930 0.629930 2.049883
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_131"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_132 Ball {
+        translation 0.629795 0.839726 1.000000
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_132"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_133 Ball {
+        translation 0.629974 0.839965 1.209991
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_133"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_134 Ball {
+        translation 0.630089 0.840118 1.420059
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_134"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_135 Ball {
+        translation 0.629542 0.839389 1.629542
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_135"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_136 Ball {
+        translation 0.630232 0.840310 1.840310
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_136"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_137 Ball {
+        translation 0.629495 0.839327 2.049159
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_137"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_138 Ball {
+        translation 0.629780 1.049634 1.000000
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_138"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_139 Ball {
+        translation 0.630029 1.050048 1.210010
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_139"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_140 Ball {
+        translation 0.629718 1.049530 1.419812
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_140"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_141 Ball {
+        translation 0.630452 1.050753 1.630452
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_141"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_142 Ball {
+        translation 0.630510 1.050850 1.840680
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_142"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_143 Ball {
+        translation 0.630155 1.050258 2.050258
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_143"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_144 Ball {
+        translation 0.839759 0.000000 1.000000
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_144"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_145 Ball {
+        translation 0.840253 0.000000 1.210063
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_145"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_146 Ball {
+        translation 0.840793 0.000000 1.420396
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_146"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_147 Ball {
+        translation 0.840583 0.000000 1.630438
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_147"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_148 Ball {
+        translation 0.840120 0.000000 1.840120
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_148"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_149 Ball {
+        translation 0.839639 0.000000 2.049549
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_149"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_150 Ball {
+        translation 0.839300 0.209825 1.000000
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_150"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_151 Ball {
+        translation 0.839209 0.209802 1.209802
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_151"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_152 Ball {
+        translation 0.840744 0.210186 1.420372
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_152"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_153 Ball {
+        translation 0.839714 0.209928 1.629785
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_153"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_154 Ball {
+        translation 0.839500 0.209875 1.839500
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_154"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_155 Ball {
+        translation 0.839878 0.209969 2.049847
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_155"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_156 Ball {
+        translation 0.840807 0.420404 1.000000
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_156"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_157 Ball {
+        translation 0.840800 0.420400 1.210200
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_157"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_158 Ball {
+        translation 0.839236 0.419618 1.419618
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_158"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_159 Ball {
+        translation 0.840328 0.420164 1.630246
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_159"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_160 Ball {
+        translation 0.839800 0.419900 1.839800
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_160"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_161 Ball {
+        translation 0.840212 0.420106 2.050265
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_161"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_162 Ball {
+        translation 0.840061 0.630046 1.000000
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_162"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_163 Ball {
+        translation 0.839688 0.629766 1.209922
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_163"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_164 Ball {
+        translation 0.839406 0.629555 1.419703
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_164"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_165 Ball {
+        translation 0.840283 0.630213 1.630213
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_165"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_166 Ball {
+        translation 0.839219 0.629414 1.839219
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_166"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_167 Ball {
+        translation 0.840717 0.630538 2.050897
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_167"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_168 Ball {
+        translation 0.840403 0.840403 1.000000
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_168"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_169 Ball {
+        translation 0.839765 0.839765 1.209941
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_169"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_170 Ball {
+        translation 0.839981 0.839981 1.419991
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_170"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_171 Ball {
+        translation 0.840613 0.840613 1.630460
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_171"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_172 Ball {
+        translation 0.839489 0.839489 1.839489
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_172"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_173 Ball {
+        translation 0.839638 0.839638 2.049547
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_173"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_174 Ball {
+        translation 0.840455 1.050569 1.000000
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_174"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_175 Ball {
+        translation 0.839849 1.049811 1.209962
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_175"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_176 Ball {
+        translation 0.839725 1.049656 1.419863
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_176"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_177 Ball {
+        translation 0.839636 1.049545 1.629727
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_177"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_178 Ball {
+        translation 0.840097 1.050122 1.840097
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_178"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_179 Ball {
+        translation 0.840794 1.050993 2.050993
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_179"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_180 Ball {
+        translation 1.049779 0.000000 1.000000
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_180"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_181 Ball {
+        translation 1.050015 0.000000 1.210003
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_181"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_182 Ball {
+        translation 1.049147 0.000000 1.419659
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_182"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_183 Ball {
+        translation 1.050031 0.000000 1.630019
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_183"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_184 Ball {
+        translation 1.050528 0.000000 1.840422
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_184"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_185 Ball {
+        translation 1.049495 0.000000 2.049495
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_185"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_186 Ball {
+        translation 1.049724 0.209945 1.000000
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_186"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_187 Ball {
+        translation 1.049478 0.209896 1.209896
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_187"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_188 Ball {
+        translation 1.049061 0.209812 1.419624
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_188"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_189 Ball {
+        translation 1.048957 0.209791 1.629374
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_189"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_190 Ball {
+        translation 1.050614 0.210123 1.840491
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_190"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_191 Ball {
+        translation 1.049978 0.209996 2.049978
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_191"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_192 Ball {
+        translation 1.049527 0.419811 1.000000
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_192"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_193 Ball {
+        translation 1.048967 0.419587 1.209793
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_193"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_194 Ball {
+        translation 1.049507 0.419803 1.419803
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_194"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_195 Ball {
+        translation 1.050681 0.420273 1.630409
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_195"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_196 Ball {
+        translation 1.050113 0.420045 1.840090
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_196"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_197 Ball {
+        translation 1.050086 0.420034 2.050086
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_197"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_198 Ball {
+        translation 1.050548 0.630329 1.000000
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_198"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_199 Ball {
+        translation 1.050931 0.630559 1.210186
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_199"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_200 Ball {
+        translation 1.050487 0.630292 1.420195
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_200"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_201 Ball {
+        translation 1.049766 0.629859 1.629859
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_201"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_202 Ball {
+        translation 1.048957 0.629374 1.839165
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_202"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_203 Ball {
+        translation 1.049911 0.629947 2.049911
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_203"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_204 Ball {
+        translation 1.050896 0.840717 1.000000
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_204"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_205 Ball {
+        translation 1.049747 0.839797 1.209949
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_205"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_206 Ball {
+        translation 1.050090 0.840072 1.420036
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_206"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_207 Ball {
+        translation 1.049146 0.839317 1.629488
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_207"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_208 Ball {
+        translation 1.050116 0.840093 1.840093
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_208"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_209 Ball {
+        translation 1.049500 0.839600 2.049500
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_209"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_210 Ball {
+        translation 1.050625 1.050625 1.000000
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_210"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_211 Ball {
+        translation 1.049756 1.049756 1.209951
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_211"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_212 Ball {
+        translation 1.050008 1.050008 1.420003
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_212"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_213 Ball {
+        translation 1.049514 1.049514 1.629708
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_213"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_214 Ball {
+        translation 1.050570 1.050570 1.840456
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_214"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
+    DEF ball_215 Ball {
+        translation 1.050440 1.050440 2.050440
+        rotation 1 1 1 1
+        radius 0.100000
+        mass 10.000000
+        centerOfMass [
+            0 0 0
+        ]
+            name "ball_215"
+        linearDamping 0.0
+        angularDamping 0.0
+    }
+    
