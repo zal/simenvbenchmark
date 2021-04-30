@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![DOI: t.b.d](https://img.shields.io/badge/doi-t.b.d.-17445a.svg)](https://doi.org/t.b.d.)
-[![arXiv: t.b.d.](https://img.shields.io/badge/arXiv-t.b.d.-b31b1b.svg)](https://arxiv.org/abs/t.b.d.)
+[![arXiv: 2103.04616](https://img.shields.io/badge/arXiv-2103.04616-b31b1b.svg)](https://arxiv.org/abs/2103.04616)
 
 This repository provides the code used in our paper [Comparing Popular Simulation Environments in the Scope of Robotics and Reinforcement Learning](https://doi.org/t.b.d.), also available on [arXiv](https://arxiv.org/abs/t.b.d.).
 The scope of this benchmark is to compare [Gazebo](http://gazebosim.org/), [MuJoCo](http://www.mujoco.org/), [PyBullet](https://pybullet.org/wordpress/), and [Webots](https://cyberbotics.com/).
